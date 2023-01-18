@@ -2,37 +2,95 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#navbar {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  /* border: 1px solid blue; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#nav_category {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.nav_box {
+  line-height: 0px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav_avatar {
+  width: 35%;
+}
+
+.nav_avatar:hover {
+  color: #008cff;
+}
+
+.nav_text {
+  font-size: 13px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.nav_text:hover {
+  color: #008cff;
+  text-decoration: underline;
+}
+
+#nav_filter {
+  /* border: 1px solid green; */
+  justify-content: space-around;
+  align-items: center;
+}
+
+.select_label {
+  font-size: 13px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.select {
+  border: none;
+  color: #008cff;
+  cursor: pointer;
+}
+
+/* footer css  */
+
+#footer_top {
+  background-color: #f3f1f1;
+  width: 90%;
+  margin: auto;
+  text-align: left;
+}
+
+#footer_top spam {
+  font-size: 13px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#footer_top spam:hover {
+  color: #008cff;
+  cursor: pointer;
+}
+
+.footer_top_category {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#footer_mid {
+  width: 90%;
+  margin: auto;
+  background-color: #c5c3c3;
+  text-align: left;
+  padding: 50px 20px;
+}
+
+.footer_about_me {
+  font-weight: 700;
 }
