@@ -1,4 +1,4 @@
-import { Avatar, Box, Button, Flex, Text } from "@chakra-ui/react";
+import { Avatar, Box, Button, Flex, IconButton, Text } from "@chakra-ui/react";
 import React from "react";
 import "../App.css";
 import logo from "../Icon/Plan_my_trip.png";
@@ -13,6 +13,7 @@ import forex from "../Icon/forex.png";
 import charted from "../Icon/charted.png";
 import activity from "../Icon/activities.png";
 import { useNavigate } from "react-router-dom";
+import { HamburgerIcon } from "@chakra-ui/icons";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -22,8 +23,9 @@ const Navbar = () => {
         style={{
           height: "60px",
           boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
-          position: "fixed",
+          position: "sticky",
           top: "0px",
+          left: "0px",
         }}
       >
         <Flex id="navbar" gap={"20px"}>

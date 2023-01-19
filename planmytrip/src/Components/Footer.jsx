@@ -1,126 +1,136 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
-import { spam, useNavigate } from "react-router-dom";
+import { Link, spam, useNavigate } from "react-router-dom";
 import "../App.css";
+import facebook from "../Icon/facebook.png";
+import twitter from "../Icon/twitter.png";
 
 const Footer = () => {
   const navigate = useNavigate();
   return (
-    <div style={{ backgroundColor: "#f3f1f1" }}>
-      <Box id="footer_top">
-        <Box>
-          <Text className="footer_top_category">PRODUCT OFFERING</Text>
-          <Text onClick={() => navigate("/")}>
-            <spam>Flight</spam>, <spam>International Flight</spam>,
-            <spam>Charte Flight</spam>, <spam>Hotels</spam>,
-            <spam>International Hotels</spam>, <spam>Homestays and villas</spam>
-            ,<spam>holiday in india</spam>, <spam>International holiday</spam>,
-            <spam>Book hotel from UAE</spam>,
-            <spam>myBiz for Corporate Travel</spam>,
-            <spam>Book Online Cabs</spam>, <spam>Book Bus Tickets</spam>,
-            <spam>Book Train Tickets</spam>, <spam>Book Fights from US</spam>,
-            <spam>Trip Planner</spam>, <spam>One Way Cab</spam>,
-            <spam>Gift Card</spam>
-          </Text>
-        </Box>
-        <Box>
-          <Text className="footer_top_category">MAKEMYTRIP</Text>
-          <Text onClick={() => navigate("/")}>
-            <spam>About Us</spam>, <spam>Investor Relation</spam>,
-            <spam>Career</spam>, <spam>MMT Foundation</spam>,
-            <spam>CSR Policy</spam>, <spam>myPartner-Travel Agent Portal</spam>,
-            <spam>Foreign Exchange</spam>, <spam>List your hotel</spam>,
-            <spam>Partners-Reabus</spam>, <spam>Partner-Goibibo</spam>,
-            <spam>Advertize with Us</spam>
-          </Text>
-        </Box>
-        <Box>
-          <Text className="footer_top_category">ABOUT THE SITE</Text>
-          <Text onClick={() => navigate("/")}>
-            <spam>Customer Support</spam>, <spam>Payment Security</spam>,
-            <spam>Privicy Policy</spam>, <spam>User Agreement</spam>,
-            <spam>Terms of Service</spam>, <spam>More Offices</spam>,
-            <spam>Make A Payment</spam>, <spam>Work From Home</spam>
-          </Text>
-        </Box>
-        <Box>
-          <Text className="footer_top_category">TOP HOTELS IN INDIA</Text>
-          <Text onClick={() => navigate("/")}>
-            <spam>Hotal Taj Mumbai</spam>, <spam>Hotel Oborai Mumbai</spam>
-            <spam>W Goa</spam>, <spam>Grand Hayat Goa</spam>,
-            <spam>The Westion Goa</spam>, <spam>Hotal Taj Mumbai</spam>,
-            <spam>Hotel Oborai Mumbai</spam>, <spam>W Goa</spam>,{" "}
-            <spam>Grand Hayat Goa</spam>, <spam>The Westion Goa</spam>,{" "}
-            <spam>Hotal Taj Mumbai</spam>,<spam>Hotel Oborai Mumbai</spam>,
-            <spam>W Goa</spam>, <spam>Grand Hayat Goa</spam>,
-            <spam>The Westion Goa</spam>, <spam>Hotal Taj Mumbai</spam>,
-            <spam>Hotel Oborai Mumbai</spam>, <spam>W Goa</spam>,{" "}
-            <spam>Grand Hayat Goa</spam>, <spam>The Westion Goa</spam>,{" "}
-            <spam>Hotal Taj Mumbai</spam>, <spam>Hotel Oborai Mumbai</spam>,
-            <spam>W Goa</spam>, <spam>Grand Hayat Goa</spam>,
-            <spam>The Westion Goa</spam>
-          </Text>
-        </Box>
-        <Box>
-          <Text className="footer_top_category">TOP INTERNATIONAL HOTEL</Text>
-          <Text onClick={() => navigate("/")}>
-            <spam>Adaaran Club Rannalhi</spam>, <spam>Burk Khalifa</spam>,
-            <spam>Trum International</spam>, <spam>Caesars Palace</spam>,
-            <spam>Taj Samudra Colombo</spam>, <spam>Adaaran Club Rannalhi</spam>
-            ,<spam>Burk Khalifa</spam>, <spam>Trum International</spam>,
-            <spam>Caesars Palace</spam>, <spam>Taj Samudra Colombo</spam>,
-            <spam>Adaaran Club Rannalhi</spam>, <spam>Burk Khalifa</spam>,
-            <spam>Trum International</spam>, <spam>Caesars Palace</spam>,
-            <spam>Taj Samudra Colombo</spam>, <spam>Adaaran Club Rannalhi</spam>
-            ,<spam>Burk Khalifa</spam>, <spam>Trum International</spam>,
-            <spam>Caesars Palace</spam>, <spam>Taj Samudra Colombo</spam>,
-            <spam>Adaaran Club Rannalhi</spam>, <spam>Burk Khalifa</spam>,
-            <spam>Trum International</spam>, <spam>Caesars Palace</spam>,
-            <spam>Taj Samudra Colombo</spam>
-          </Text>
-        </Box>
-        <Box>
-          <Text className="footer_top_category">QUICK LINKS</Text>
-          <Text onClick={() => navigate("/")}>
-            <spam>Customer Support</spam>, <spam>Payment Security</spam>,
-            <spam>Privicy Policy</spam>, <spam>User Agreement</spam>,
-            <spam>Terms of Service</spam>, <spam>More Offices</spam>,
-            <spam>Make A Payment</spam>, <spam>Work From Home</spam>
-          </Text>
-        </Box>
-        <Box>
-          <Text className="footer_top_category">IMPORTANT LINKS</Text>
-          <Text onClick={() => navigate("/")}>
-            <spam>Flight</spam>, <spam>International Flight</spam>,
-            <spam>Charte Flight</spam>, <spam>Hotels</spam>,
-            <spam>International Hotels</spam>, <spam>Homestays and villas</spam>
-            ,<spam>holiday in india</spam>, <spam>International holiday</spam>,
-            <spam>Book hotel from UAE</spam>,
-            <spam>myBiz for Corporate Travel</spam>,
-            <spam>Book Online Cabs</spam>, <spam>Book Bus Tickets</spam>,
-            <spam>Book Train Tickets</spam>, <spam>Book Fights from US</spam>,
-            <spam>Trip Planner</spam>, <spam>One Way Cab</spam>,
-            <spam>Gift Card</spam>
-          </Text>
-        </Box>
-        <Box>
-          <Text className="footer_top_category">CORPORATE TRAVEL</Text>
-          <Text onClick={() => navigate("/")}>
-            <spam>About Us</spam>, <spam>Investor Relation</spam>,
-            <spam>Career</spam>, <spam>MMT Foundation</spam>,
-            <spam>CSR Policy</spam>, <spam>myPartner-Travel Agent Portal</spam>,
-            <spam>Foreign Exchange</spam>, <spam>List your hotel</spam>,
-            <spam>Partners-Reabus</spam>, <spam>Partner-Goibibo</spam>,
-            <spam>Advertize with Us</spam>
-          </Text>
+    <div>
+      <Box style={{ backgroundColor: "#f3f1f1" }}>
+        <Box id="footer_top">
+          <Box>
+            <Text className="footer_top_category">PRODUCT OFFERING</Text>
+            <Text onClick={() => navigate("/")}>
+              <spam>Flight</spam>, <spam>International Flight</spam>,
+              <spam>Charte Flight</spam>, <spam>Hotels</spam>,
+              <spam>International Hotels</spam>,{" "}
+              <spam>Homestays and villas</spam>,<spam>holiday in india</spam>,{" "}
+              <spam>International holiday</spam>,
+              <spam>Book hotel from UAE</spam>,
+              <spam>myBiz for Corporate Travel</spam>,
+              <spam>Book Online Cabs</spam>, <spam>Book Bus Tickets</spam>,
+              <spam>Book Train Tickets</spam>, <spam>Book Fights from US</spam>,
+              <spam>Trip Planner</spam>, <spam>One Way Cab</spam>,
+              <spam>Gift Card</spam>
+            </Text>
+          </Box>
+          <Box>
+            <Text className="footer_top_category">MAKEMYTRIP</Text>
+            <Text onClick={() => navigate("/")}>
+              <spam>About Us</spam>, <spam>Investor Relation</spam>,
+              <spam>Career</spam>, <spam>MMT Foundation</spam>,
+              <spam>CSR Policy</spam>,{" "}
+              <spam>myPartner-Travel Agent Portal</spam>,
+              <spam>Foreign Exchange</spam>, <spam>List your hotel</spam>,
+              <spam>Partners-Reabus</spam>, <spam>Partner-Goibibo</spam>,
+              <spam>Advertize with Us</spam>
+            </Text>
+          </Box>
+          <Box>
+            <Text className="footer_top_category">ABOUT THE SITE</Text>
+            <Text onClick={() => navigate("/")}>
+              <spam>Customer Support</spam>, <spam>Payment Security</spam>,
+              <spam>Privicy Policy</spam>, <spam>User Agreement</spam>,
+              <spam>Terms of Service</spam>, <spam>More Offices</spam>,
+              <spam>Make A Payment</spam>, <spam>Work From Home</spam>
+            </Text>
+          </Box>
+          <Box>
+            <Text className="footer_top_category">TOP HOTELS IN INDIA</Text>
+            <Text onClick={() => navigate("/")}>
+              <spam>Hotal Taj Mumbai</spam>, <spam>Hotel Oborai Mumbai</spam>
+              <spam>W Goa</spam>, <spam>Grand Hayat Goa</spam>,
+              <spam>The Westion Goa</spam>, <spam>Hotal Taj Mumbai</spam>,
+              <spam>Hotel Oborai Mumbai</spam>, <spam>W Goa</spam>,{" "}
+              <spam>Grand Hayat Goa</spam>, <spam>The Westion Goa</spam>,{" "}
+              <spam>Hotal Taj Mumbai</spam>,<spam>Hotel Oborai Mumbai</spam>,
+              <spam>W Goa</spam>, <spam>Grand Hayat Goa</spam>,
+              <spam>The Westion Goa</spam>, <spam>Hotal Taj Mumbai</spam>,
+              <spam>Hotel Oborai Mumbai</spam>, <spam>W Goa</spam>,{" "}
+              <spam>Grand Hayat Goa</spam>, <spam>The Westion Goa</spam>,{" "}
+              <spam>Hotal Taj Mumbai</spam>, <spam>Hotel Oborai Mumbai</spam>,
+              <spam>W Goa</spam>, <spam>Grand Hayat Goa</spam>,
+              <spam>The Westion Goa</spam>
+            </Text>
+          </Box>
+          <Box>
+            <Text className="footer_top_category">TOP INTERNATIONAL HOTEL</Text>
+            <Text onClick={() => navigate("/")}>
+              <spam>Adaaran Club Rannalhi</spam>, <spam>Burk Khalifa</spam>,
+              <spam>Trum International</spam>, <spam>Caesars Palace</spam>,
+              <spam>Taj Samudra Colombo</spam>,{" "}
+              <spam>Adaaran Club Rannalhi</spam>,<spam>Burk Khalifa</spam>,{" "}
+              <spam>Trum International</spam>,<spam>Caesars Palace</spam>,{" "}
+              <spam>Taj Samudra Colombo</spam>,
+              <spam>Adaaran Club Rannalhi</spam>, <spam>Burk Khalifa</spam>,
+              <spam>Trum International</spam>, <spam>Caesars Palace</spam>,
+              <spam>Taj Samudra Colombo</spam>,{" "}
+              <spam>Adaaran Club Rannalhi</spam>,<spam>Burk Khalifa</spam>,{" "}
+              <spam>Trum International</spam>,<spam>Caesars Palace</spam>,{" "}
+              <spam>Taj Samudra Colombo</spam>,
+              <spam>Adaaran Club Rannalhi</spam>, <spam>Burk Khalifa</spam>,
+              <spam>Trum International</spam>, <spam>Caesars Palace</spam>,
+              <spam>Taj Samudra Colombo</spam>
+            </Text>
+          </Box>
+          <Box>
+            <Text className="footer_top_category">QUICK LINKS</Text>
+            <Text onClick={() => navigate("/")}>
+              <spam>Customer Support</spam>, <spam>Payment Security</spam>,
+              <spam>Privicy Policy</spam>, <spam>User Agreement</spam>,
+              <spam>Terms of Service</spam>, <spam>More Offices</spam>,
+              <spam>Make A Payment</spam>, <spam>Work From Home</spam>
+            </Text>
+          </Box>
+          <Box>
+            <Text className="footer_top_category">IMPORTANT LINKS</Text>
+            <Text onClick={() => navigate("/")}>
+              <spam>Flight</spam>, <spam>International Flight</spam>,
+              <spam>Charte Flight</spam>, <spam>Hotels</spam>,
+              <spam>International Hotels</spam>,{" "}
+              <spam>Homestays and villas</spam>,<spam>holiday in india</spam>,{" "}
+              <spam>International holiday</spam>,
+              <spam>Book hotel from UAE</spam>,
+              <spam>myBiz for Corporate Travel</spam>,
+              <spam>Book Online Cabs</spam>, <spam>Book Bus Tickets</spam>,
+              <spam>Book Train Tickets</spam>, <spam>Book Fights from US</spam>,
+              <spam>Trip Planner</spam>, <spam>One Way Cab</spam>,
+              <spam>Gift Card</spam>
+            </Text>
+          </Box>
+          <Box>
+            <Text className="footer_top_category">CORPORATE TRAVEL</Text>
+            <Text onClick={() => navigate("/")}>
+              <spam>About Us</spam>, <spam>Investor Relation</spam>,
+              <spam>Career</spam>, <spam>MMT Foundation</spam>,
+              <spam>CSR Policy</spam>,{" "}
+              <spam>myPartner-Travel Agent Portal</spam>,
+              <spam>Foreign Exchange</spam>, <spam>List your hotel</spam>,
+              <spam>Partners-Reabus</spam>, <spam>Partner-Goibibo</spam>,
+              <spam>Advertize with Us</spam>
+            </Text>
+          </Box>
         </Box>
       </Box>
-      <Box backgroundColor={"#f3f1f1"} width="100%">
+      <Box backgroundColor={"#dddbdb"}>
         <Box id="footer_mid">
-          <Flex gap={"20px"}>
+          <Flex gap={"30px"}>
             <Box w={"32%"}>
               <Text className="footer_about_me">Why PlanMyTrip?</Text>
-              <Text>
+              <Text className="footer_description">
                 Established in 2000, PlanMyTrip has since positioned itself as
                 one of the leading companies, providing great offers,
                 competitive airfares, exclusive discounts, and a seamless online
@@ -137,7 +147,7 @@ const Footer = () => {
               <Text className="footer_about_me">
                 Booking Flights with MakeMyTrip
               </Text>
-              <Text>
+              <Text className="footer_description">
                 At MakeMyTrip, you can find the best of deals and cheap air
                 tickets to any place you want by booking your tickets on our
                 website or app. Being India’s leading website for hotel, flight,
@@ -156,7 +166,7 @@ const Footer = () => {
               <Text className="footer_about_me">
                 Domestic Flights with MakeMyTrip
               </Text>
-              <Text>
+              <Text className="footer_description">
                 MakeMyTrip is India's leading player for flight bookings. With
                 the cheapest fare guarantee, experience great value at the
                 lowest price. Instant notifications ensure current flight
@@ -167,6 +177,27 @@ const Footer = () => {
             </Box>
           </Flex>
         </Box>
+      </Box>
+      <Box background={"black"}>
+        <Flex id="footer_bottom">
+          <Flex gap={"20px"}>
+            <Link to={"https://twitter.com/makemytrip/"}>
+              <Image src={twitter} backgroundColor="white" borderRadius="50%" />
+            </Link>
+            <Link to={"https://www.facebook.com/makemytrip/"}>
+              <Image
+                src={facebook}
+                backgroundColor="white"
+                borderRadius="50%"
+              />
+            </Link>
+          </Flex>
+          <Box>
+            <Text fontWeight={600} color="white">
+              @ 2023 PLANMYTRIP PVT.LTD <spam>country</spam> INDIA USA UAE
+            </Text>
+          </Box>
+        </Flex>
       </Box>
     </div>
   );
