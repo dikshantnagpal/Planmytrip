@@ -1,5 +1,5 @@
 import { Avatar, Box, Button, Flex, IconButton, Text } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 import "../App.css";
 import logo from "../Icon/Plan_my_trip.png";
 import flight from "../Icon/airplane.png";
@@ -13,20 +13,23 @@ import forex from "../Icon/forex.png";
 import charted from "../Icon/charted.png";
 import activity from "../Icon/activities.png";
 import { useNavigate } from "react-router-dom";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const [responsiveMenu, setResponsiveMenu] = useState(false);
   return (
     <div>
       <div
         style={{
           height: "60px",
+          backgroundColor: "white",
           boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
-          position: "sticky",
+          position: "fixed",
           top: "0px",
           left: "0px",
         }}
+        id="nav_div"
       >
         <Flex id="navbar" gap={"20px"}>
           <Box
@@ -39,7 +42,11 @@ const Navbar = () => {
           >
             <Avatar src={logo} width={"100%"} />
           </Box>
-          <Flex w={"60%"} id="nav_category" gap={"8px"}>
+          <Box
+            w={"60%"}
+            id={responsiveMenu ? "tablet_nav_category" : "nav_category"}
+            gap={"8px"}
+          >
             <Box className="nav_box" onClick={() => navigate("/flight")}>
               <Avatar src={flight} className="nav_avatar" />
               <Text className="nav_text">Flights</Text>
@@ -80,7 +87,7 @@ const Navbar = () => {
               <Avatar src={activity} className="nav_avatar" />
               <Text className="nav_text">Activities</Text>
             </Box>
-          </Flex>
+          </Box>
           <Flex w={"30%"} id="nav_filter">
             <Box>
               <Button
@@ -115,6 +122,11 @@ const Navbar = () => {
               </select>
             </Box>
           </Flex>
+          <Box id="hamburger">
+            <a href="#" onClick={() => setResponsiveMenu((prev) => !prev)}>
+              <GiHamburgerMenu />
+            </a>
+          </Box>
         </Flex>
       </div>
     </div>

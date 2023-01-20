@@ -5,10 +5,13 @@
 #navbar {
   width: 90%;
   height: 100%;
+  display: flex;
   margin: auto;
+  /* border: 1px solid blue; */
 }
 
 #nav_category {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -85,27 +88,65 @@
 #footer_mid {
   width: 90%;
   margin: auto;
-  background-color: #dddbdb;
+  background-color: #c5c3c3;
   text-align: left;
-  padding: 40px 20px;
+  padding: 50px 20px;
+}
+
+#footer_mid_contatent {
+  display: flex;
+  gap: 20px;
 }
 
 .footer_about_me {
   font-weight: 700;
 }
 
-.footer_description {
-  font-size: 13px;
-  font-weight: 400;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  line-height: 14px;
+#hamburger {
+  display: none;
 }
 
-#footer_bottom {
-  width: 90%;
-  margin: auto;
-  justify-content: space-between;
-  background-color: black;
-  padding: 50px 0px;
+@media (max-width: 880px) {
+  #nav_div {
+    width: 100%;
+    height: 40px;
+  }
+  #navbar {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #nav_logo {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #nav_category {
+    display: none;
+  }
+  #nav_filter {
+    display: none;
+  }
+  #hamburger {
+    display: block;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 20px;
+  }
+  #tablet_nav_category {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 410px;
+  }
+  #tablet_nav_category .nav_avatar {
+    display: none;
+  }
+  #tablet_nav_category .nav_box {
+    border-bottom: 1px solid gray;
+    background-color: white;
+  }
 }
