@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#home{
+    width: 95%;
+    margin: auto;
+    margin-top: 70px;
+}
+#blue{
+    background-color: #0b69b5;
+    padding: 20px;
+    height: 300px;
+
+}
+#whit{
+    margin: auto;
+    padding: 1%;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+.check{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+}
+#delhi{
+    display: flex;
+    border: 0.1px solid grey;
+    margin: auto;
+    margin-top: 1%;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    border-radius: 8px;
+}
+.bang{
+    display: flex;
+    width: 50%;
+}
+.bang>div{
+    border: 0.1px solid rgb(187, 187, 187);
+    width: 50%;
+    padding: 0% 0% 0% 1%;
+    text-align: left;
+}
+.bang>div:first-child{
+    border-radius: 8px 0 0 8px;
+}
+#label{
+    background-color: rgb(230, 227, 227);
+    text-align: left;
+    display: flex;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1.8%;
+    width: 53%;
+}
+#label>div{
+    border: 1px solid white;
+    text-align: center;
+    font-size: 16px;
+}
+label{
+    cursor: pointer;
+}
+#search{
+    background-color: rgb(72, 72, 253);
+    color: white;
+    font-size: 22px;
+    padding: 1%;
+    border-radius: 20px;
+    border: none;
+    margin-top: 5%;
+    cursor: pointer;
+    width: 20%;
+}
+#where{
+    display: flex;
+    margin: auto;
+    border-radius: 50px;
+    width: 75%;
+    height: auto;
+    margin-top: 30px;
+    background-color: rgb(231, 230, 230);
+}
+#where>div{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    border-left: 2px solid white;
+}
+#where>div:first-child,#where>div:last-child{
+    border-radius: 50px;
+    border: none;
+}
+#where>div>img{
+    height: 30%;
+    width: 20%;
+}
+#where>div:hover,.bang>div:hover{
+    background-color:  rgb(229, 229, 229);
+    cursor: pointer;
+}
