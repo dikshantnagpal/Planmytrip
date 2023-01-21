@@ -113,6 +113,7 @@
 #footer_bottom {
   width: 90%;
   margin: auto;
+  display: flex;
   justify-content: space-between;
   background-color: black;
   padding: 50px 0px;
@@ -138,7 +139,7 @@
   }
 
   #nav_home:hover {
-    color: #008cff;
+    color: yellow;
     text-decoration: underline;
   }
 
@@ -162,6 +163,8 @@
   #tablet_nav_category {
     display: block;
     width: 100%;
+    border: 1px solid green;
+    background-color: #008cff;
   }
   #tablet_nav_category .nav_avatar {
     display: none;
@@ -170,12 +173,27 @@
     display: none;
   }
   #tablet_nav_category .nav_box {
-    border-bottom: 1px solid gray;
+    /* border-bottom: 1px solid gray; */
     background-color: white;
   }
   #tablet_nav_category .nav_text {
     font-size: 17px;
     font-weight: 500;
     padding-left: 20px;
+  }
+  #tablet_nav_category .nav_text:hover {
+    color: yellow;
+  }
+}
+
+@media (max-width: 475px) {
+  #footer_mid {
+    display: block;
+  }
+  #footer_mid .footer_mid_box {
+    width: 100%;
+  }
+  #footer_bottom {
+    display: block;
   }
 }
