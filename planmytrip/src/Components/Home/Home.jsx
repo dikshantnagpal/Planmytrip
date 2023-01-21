@@ -1,11 +1,17 @@
+import { useState } from 'react';
+import Card from './Card';
+import { data } from './data';
+import { data2 } from './data';
 import './Home.css';
 
 function Home(){
+    
+    const [yes,setYes] = useState(true);
+    console.log(yes);
     const date = new Date();
-   let today = date.getDate() +"/"+ date.getFullYear();
-   const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    let today = date.getDate() +"/"+ date.getFullYear();
+    const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     let day = weekday[date.getDay()];
-    console.log(day);
     return(
         <div id="home">
             <div id='blue'>
@@ -70,6 +76,40 @@ function Home(){
                     <div>
                         <img src="https://promos.makemytrip.com/appfest/2x/gift%20card%201.png" alt="icon" /> <p>Gift Cards</p>
                     </div>
+                </div>
+            </div>
+            <div id='big'>
+
+                <div id='offer'>
+                    <div id='par'>
+                        <h1>Offers :</h1>
+                        <a href=""><h3>All Offers</h3></a>
+                        <a href=""><h3>Bank Offers</h3></a>
+                        <a href=""> <h3>Holidays</h3></a>
+                        <a href=""><h3>Hotels</h3></a>
+                        <a href=""><h3>Flights</h3></a>
+                        <a href=""><h3>Cabs</h3></a>
+                        <a href=""> <h3>Others</h3></a>
+                    </div>
+
+                    <div>
+                        <button disabled={yes} onClick={()=>setYes(true)}> {"<"} </button>
+                        <button disabled={!yes} onClick={()=>setYes(false)}> {">"} </button>
+                    </div>
+                </div>
+                <hr />
+
+                <div id='crousel'>
+
+                    {
+                        yes ? data.map((ele,index)=>(
+                          <Card key={index} img={ele.img} capText={ele.capText} blackText={ele.blackText} font14={ele.font14} font142={ele.font142} />
+                          )):
+                          data2.map((ele,index)=>(
+                            <Card key={index} img={ele.img} capText={ele.capText} blackText={ele.blackText} font14={ele.font14} font142={ele.font142} />
+                            ))     
+                    }
+
                 </div>
             </div>
         </div>
