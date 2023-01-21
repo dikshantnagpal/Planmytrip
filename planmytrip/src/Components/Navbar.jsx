@@ -1,4 +1,4 @@
-import { Avatar, Box, Button, Flex, IconButton, Text } from "@chakra-ui/react";
+import { Avatar, Box, Button, Flex, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
 import "../App.css";
 import logo from "../Icon/Plan_my_trip.png";
@@ -31,8 +31,9 @@ const Navbar = () => {
         }}
         id="nav_div"
       >
-        <Flex id="navbar" gap={"20px"}>
+        <Box id="navbar" gap={"20px"}>
           <Box
+            id="nav_logo"
             w={"10%"}
             display="flex"
             justifyContent={"left"}
@@ -42,11 +43,19 @@ const Navbar = () => {
           >
             <Avatar src={logo} width={"100%"} />
           </Box>
+          <Box id="hamburger">
+            <a href="#" onClick={() => setResponsiveMenu((prev) => !prev)}>
+              <GiHamburgerMenu />
+            </a>
+          </Box>
           <Box
             w={"60%"}
             id={responsiveMenu ? "tablet_nav_category" : "nav_category"}
             gap={"8px"}
           >
+            <Box id="nav_home" onClick={() => navigate("/")}>
+              <Text>Home</Text>
+            </Box>
             <Box className="nav_box" onClick={() => navigate("/flight")}>
               <Avatar src={flight} className="nav_avatar" />
               <Text className="nav_text">Flights</Text>
@@ -122,12 +131,7 @@ const Navbar = () => {
               </select>
             </Box>
           </Flex>
-          <Box id="hamburger">
-            <a href="#" onClick={() => setResponsiveMenu((prev) => !prev)}>
-              <GiHamburgerMenu />
-            </a>
-          </Box>
-        </Flex>
+        </Box>
       </div>
     </div>
   );
