@@ -104,3 +104,78 @@ label{
     background-color:  rgb(229, 229, 229);
     cursor: pointer;
 }
+#crousel{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    padding: 2%;
+    gap: 3%;
+    /* border: 1px solid red; */
+}
+#big{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    margin-top: 200px;
+    border: 1px solid rgb(249, 248, 248);
+    
+}
+#live{
+    display: flex;
+    border-radius: 15px;
+    margin-top: 5%;
+    gap: 5%;
+    padding: 5%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#image{
+    border-radius: 15px;
+    width: 40%;
+
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+#gene{
+    border-radius: 15px;
+    width: 60%;
+    text-align: left;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+#gene>button{
+    border: none;
+    color: blue;
+    font-weight: bolder;
+    padding: 2%;
+    background-color: white;
+    font-size: 17px;
+}
+#live>div>img{
+    height: 80%;
+    width: 90%;
+    margin-top: 10%;
+}
+#offer{
+    margin: 2% auto 2% auto;
+    /* margin-top: 2%; */
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+}
+#offer>div:first-child{
+    width: 70%;
+}
+#offer>button{
+    align-items:flex-end;
+    padding: 10px;
+    color: #0b69b5;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 0.1px solid gray;
+    margin-right: 5px;
+}
+#par{
+    display: flex;
+}
+#par>a{
+    margin: 1% 1% 0 1%;
+
+}
