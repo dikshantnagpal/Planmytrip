@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import Card from './Card';
-import { data } from './data';
+import { data, images, images2 } from './data';
 import { data2 } from './data';
 import './Home.css';
+import { Link } from 'react-router-dom';
+import { ImageCard } from './ImageCard';
 
 function Home(){
     
@@ -92,7 +94,7 @@ function Home(){
                         <a href=""> <h3>Others</h3></a>
                     </div>
 
-                    <div>
+                    <div id='btn'>
                         <button disabled={yes} onClick={()=>setYes(true)}> {"<"} </button>
                         <button disabled={!yes} onClick={()=>setYes(false)}> {">"} </button>
                     </div>
@@ -103,14 +105,59 @@ function Home(){
 
                     {
                         yes ? data.map((ele,index)=>(
-                          <Card key={index} img={ele.img} capText={ele.capText} blackText={ele.blackText} font14={ele.font14} font142={ele.font142} />
+                          <Card key={index} {...ele} />
                           )):
                           data2.map((ele,index)=>(
-                            <Card key={index} img={ele.img} capText={ele.capText} blackText={ele.blackText} font14={ele.font14} font142={ele.font142} />
+                            <Card key={index} {...ele} />
                             ))     
                     }
 
                 </div>
+            </div>
+            <div id='add'><img src="https://mmt.servedbyadbutler.com/getad.img/;libID=3514048" alt="image" /></div>
+            
+            <div id='down'>
+                <div id='get'>
+                    <h1>Download App Now ! <br /> <p><span style={{fontSize:"14px",color:"gray"}}>Get India's #1 travel super app, join 100 Million+ happy travellers!</span> </p>  </h1>
+                    <p> Use code <span style={{color:"red",fontWeight:"bold"}}> WELCOMEMMT</span> and get upto Rs 1200 off on your first domestic flight booking</p>
+                    <input type="number" placeholder='Enter Mobile number' />
+                    <button>Get App Link</button>
+                </div>
+                <div id='app'>
+                    <p>More ways to get the App</p>
+                   <Link to={"https://play.google.com/store/apps/details?id=com.makemytrip"}> <img id='store' src="https://p.kindpng.com/picc/s/114-1144140_available-on-the-app-store-and-google-play.png" alt="image" /></Link>
+                   <Link> <img id='qr' src="https://promos.makemytrip.com/notification/xhdpi/QRCodeDT_QR-code.jpg" alt="image" /></Link>
+                </div>
+            </div>
+
+            <div className='imgcard'>
+                <h1>Handpicked Collections for You</h1>
+                <div>
+                    {
+                        images.map((ele,index)=>(
+                            <ImageCard key={index} {...ele} />
+                        ))
+                    }
+                </div>
+            </div>
+
+            <div className='imgcard'>
+                <h1>Unlock Lesse-Known Wonders of India</h1>
+                <div>
+                    {
+                        images2.map((ele,index)=>(
+                            <ImageCard key={index} {...ele} />
+                        ))
+                    }
+                </div>
+            </div>
+
+            <div id='trip'>
+                <div style={{display:"flex",alignItems:"center"}}>
+                    <img src="https://www.tripmoney.com/ext/static/TravelLoan/travelLoan.png" alt="logo" />
+                    <p><b>Forex </b> at best exchange rates delivered at your doorstep !</p>
+                </div>
+                <div><button>Order Now{"-->"}</button></div>
             </div>
         </div>
     )

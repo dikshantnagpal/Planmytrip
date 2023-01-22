@@ -58,43 +58,43 @@ const Navbar = () => {
             </Box>
             <Box className="nav_box" onClick={() => navigate("/flight")}>
               <Avatar src={flight} className="nav_avatar" />
-              <Text className="nav_text">Flights</Text>
+              <Text className="nav_text" marginTop={10} >Flights</Text>
             </Box>
             <Box className="nav_box" onClick={() => navigate("/hotel")}>
               <Avatar src={hotel} className="nav_avatar" />
-              <Text className="nav_text">Hotels</Text>
+              <Text className="nav_text" marginTop={10} >Hotels</Text>
             </Box>
             <Box className="nav_box" onClick={() => navigate("/house")}>
               <Avatar src={house} className="nav_avatar" />
-              <Text className="nav_text">Homestays</Text>
+              <Text className="nav_text" marginTop={10} >Homestays</Text>
             </Box>
             <Box className="nav_box" onClick={() => navigate("/holiday")}>
               <Avatar src={holiday} className="nav_avatar" />
-              <Text className="nav_text">HolidayPlan</Text>
+              <Text className="nav_text" marginTop={10} >HolidayPlan</Text>
             </Box>
             <Box className="nav_box" onClick={() => navigate("/train")}>
               <Avatar src={train} className="nav_avatar" />
-              <Text className="nav_text">Train</Text>
+              <Text className="nav_text" marginTop={14} >Train</Text>
             </Box>
             <Box className="nav_box" onClick={() => navigate("/bus")}>
               <Avatar src={bus} className="nav_avatar" />
-              <Text className="nav_text">Buses</Text>
+              <Text className="nav_text" marginTop={13} >Buses</Text>
             </Box>
             <Box className="nav_box" onClick={() => navigate("/cab")}>
               <Avatar src={cab} className="nav_avatar" />
-              <Text className="nav_text">Cabs</Text>
+              <Text className="nav_text" marginTop={13} >Cabs</Text>
             </Box>
             <Box className="nav_box" onClick={() => navigate("/forex")}>
               <Avatar src={forex} className="nav_avatar" />
-              <Text className="nav_text">Forex</Text>
+              <Text className="nav_text" marginTop={13} >Forex</Text>
             </Box>
             <Box className="nav_box" onClick={() => navigate("/charted")}>
               <Avatar src={charted} className="nav_avatar" />
-              <Text className="nav_text">CharterPlane</Text>
+              <Text className="nav_text" marginTop={10} >CharterPlane</Text>
             </Box>
             <Box className="nav_box" onClick={() => navigate("/activity")}>
               <Avatar src={activity} className="nav_avatar" />
-              <Text className="nav_text">Activities</Text>
+              <Text className="nav_text" marginTop={14} >Activities</Text>
             </Box>
           </Box>
           <Flex w={"30%"} id="nav_filter">

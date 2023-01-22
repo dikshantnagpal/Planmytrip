@@ -204,6 +204,25 @@ export const data2 = [
      "latoRegular": "Code: MMTBFLEMI"
     },
 ]
+
+export const images = [
+    {"img":"https://hblimg.mmtcdn.com/content/hubble/img/collections/m_romantic44_p_540_417.jpg"},
+    {"img":"https://hblimg.mmtcdn.com/content/hubble/img/collections/m_honeymoon11_p_540_417.jpg"},
+    {"img":"https://hblimg.mmtcdn.com/content/hubble/img/collections/m_hill_stations11_p_540_417.jpg"},
+    {"img":"https://hblimg.mmtcdn.com/content/hubble/img/collections/m_beach44_p_540_417.jpg"},
+    {"img":"https://hblimg.mmtcdn.com/content/hubble/img/collections/m_weekend44_p_540_417.jpg"},
+]
+
+export const images2 = [
+    {"img":"https://hblimg.mmtcdn.com//content/hubble/img/narkanda/mmt/destination/m_Narkanda_l_372_902.jpg"},
+    {"img":"https://hblimg.mmtcdn.com//content/hubble/img/yercaud/mmt/destination/m_destination-yercaud-landscape_l_400_640.jpg"},
+    {"img":"https://hblimg.mmtcdn.com//content/hubble/img/dooars/mmt/destination/m_Dooars_l_457_685.jpg"},
+    {"img":"https://hblimg.mmtcdn.com//content/hubble/img/saputara/mmt/destination/m_destination-saputara-landscape_l_400_640.jpg"},
+    {"img":"https://hblimg.mmtcdn.com//content/hubble/img/dhanaulti/mmt/destination/m_Destination_Dhanaulti_l_534_801.jpg"},
+]
+
+
+
 //     {
 //         "img":"https://promos.makemytrip.com/notification/xhdpi//Desktop_IRCTC_30Dec@2x.jpg",
 //      "capText": "INTL HOTELS",
