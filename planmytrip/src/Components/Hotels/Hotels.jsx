@@ -33,7 +33,7 @@ function Hotels(){
                     <div id='delhi'>
                         <div className='bang'>
                             <div>
-                                CITY,PROPERTY NAME,LOCATION <br /><h1>Goa</h1>  India
+                                CITY,PROPERTY NAME,LOCATION <br /><h1>Delhi</h1>  India
                             </div>
                             <div>
                                 Check-In :<br /> <h1>{today}</h1>  {day}
