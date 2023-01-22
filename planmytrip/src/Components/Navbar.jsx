@@ -60,7 +60,7 @@ const Navbar = () => {
               <Avatar src={flight} className="nav_avatar" />
               <Text className="nav_text" marginTop={10} >Flights</Text>
             </Box>
-            <Box className="nav_box" onClick={() => navigate("/hotel")}>
+            <Box className="nav_box" onClick={() => navigate("/hotels")}>
               <Avatar src={hotel} className="nav_avatar" />
               <Text className="nav_text" marginTop={10} >Hotels</Text>
             </Box>

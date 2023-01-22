@@ -5,9 +5,10 @@ import { data2 } from './data';
 import './Hotels.css';
 import { Link } from 'react-router-dom';
 import { ImageCard } from './ImageCard';
+import { useNavigate } from 'react-router-dom';
 
 function Hotels(){
-    
+    const navigate=useNavigate()
     const [yes,setYes] = useState(true);
     
     const date = new Date();
@@ -60,7 +61,7 @@ function Hotels(){
                         <div><label><input type="checkbox"/>Double Fares</label></div>   
                     </div>
                 </div>
-                <button id='search'>SEARCH</button>
+                <button onClick={() => navigate("/delhi")} id='search'>SEARCH</button>
                 
                 <h4>-- Explore More --</h4>
 
