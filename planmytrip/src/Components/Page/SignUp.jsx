@@ -39,7 +39,7 @@ export const SignUp = () => {
                       <Input paddingLeft={10} width={300} height={30} rounded={5} style={{ border: "1px solid gray" }} type="password" name="password" placeholder="Repeat Password" />
                   </div>
                   <button onClick={handleSubmit} style={{ marginLeft: "-240px", height: "30px", width: "70px", marginTop: "10px", cursor: "pointer" }}>Sign Up</button>
-                  <div>
+                  <div style={{marginTop:"50px"}}>
                     <p>Already have an Account</p>
                     <Link to="/login">Login</Link>
                   </div>

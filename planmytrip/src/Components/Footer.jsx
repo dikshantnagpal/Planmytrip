@@ -9,7 +9,7 @@ const Footer = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <Box style={{ backgroundColor: "#f3f1f1" }}>
+      <Box style={{ backgroundColor: "#f3f1f1",marginTop:"70px" }}>
         <Box id="footer_top">
           <Box>
             <Text className="footer_top_category">PRODUCT OFFERING</Text>
