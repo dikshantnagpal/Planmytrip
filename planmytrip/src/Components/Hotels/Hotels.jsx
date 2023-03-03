@@ -2,17 +2,21 @@ import { useState } from 'react';
 import Card from './Card';
 import { data, images, images2 } from './data';
 import { data2 } from './data';
-import './Home.css';
+import './Hotels.css';
 import { Link } from 'react-router-dom';
 import { ImageCard } from './ImageCard';
+import { useNavigate } from 'react-router-dom';
 
-function Home(){
-    
+function Hotels(){
+    const navigate=useNavigate()
     const [yes,setYes] = useState(true);
+    
     const date = new Date();
     let today = date.getDate() +"/"+ date.getFullYear();
+    let nextDat = date.getDate()+1 +"/"+ date.getFullYear();
     const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     let day = weekday[date.getDay()];
+    let nextDay = weekday[date.getDay()+1];
     return(
         <div id="home">
             <div id='blue'>
@@ -20,32 +24,32 @@ function Home(){
 
                     <div className="check">
                         <div>
-                            <label style={{marginRight:"11px"}}><input type="checkbox"/>ONE-WAY</label>
-                            <label style={{marginRight:"11px"}}><input type="checkbox"/>ROUND-TRIP</label>
-                            <label style={{marginRight:"11px"}}><input type="checkbox"/>MULTICITY</label>
+                            <label style={{marginRight:"11px"}}><input type="checkbox"/>Upto 5 Rooms</label>
+                            <label style={{marginRight:"11px"}}><input type="checkbox"/>Group Deals</label>
                         </div>
-                        <div>Book International and domestic flights</div>
+                        <div>Book International and domestic Property Online.</div>
                     </div>
 
                     <div id='delhi'>
                         <div className='bang'>
                             <div>
-                                FROM <br /><h1>Delhi</h1> DEL,Delhi Airport India
+                                CITY,PROPERTY NAME,LOCATION <br /><h1>Delhi</h1>  India
                             </div>
                             <div>
-                                TO <br /><h1>Bangaluru</h1>BLR,Bangaluru International Airport
+                                Check-In :<br /> <h1>{today}</h1>  {day}
                             </div>
                         </div>
                         <div className='bang'>
                             <div>
-                                Departure :<br /> <h1>{today}</h1>  {day}
+                                Check-Out :<br /> <h1>{nextDat}</h1>  {nextDay}
+                                
                             </div>
                             <div style={{padding:"0 20px 0 20px"}}>
-                                Return : <br /> <h4 style={{color:"grey",wordSpacing:"-1px"}}>Tap to add a return date for bigger returns</h4>
+                                ROOMS & GUESTS : <br /> <h1 style={{wordSpacing:"-1px"}}>1 & 2</h1>Adults
                             </div>
                             <div>
-                                TRAVELLER & CLASS <br /> <h1>1 <span style={{fontSize:"18px"}}>Traveller</span> </h1> 
-                               <span style={{color:"tomato",fontWeight:"bolder"}}> Premiuim Economy</span>
+                                PRICE PER NIGHT: <br />  
+                               <span style={{color:"gray",fontWeight:"bolder"}}> Rs.0-1500,Rs1500-2500...</span>
                             </div>
                         </div>
                     </div>
@@ -57,7 +61,7 @@ function Home(){
                         <div><label><input type="checkbox"/>Double Fares</label></div>   
                     </div>
                 </div>
-                <button id='search'>SEARCH</button>
+                <button onClick={() => navigate("/delhi")} id='search'>SEARCH</button>
                 
                 <h4>-- Explore More --</h4>
 
@@ -113,7 +117,7 @@ function Home(){
 
                 </div>
             </div>
-            <div id='add'><img src="https://mmt.servedbyadbutler.com/getad.img/;libID=3514048" alt="image" /></div>
+            <div id='add'><img src="https://mmt.servedbyadbutler.com/getad.img/;libID=3712531" alt="image" /></div>
             
             <div id='down'>
                 <div id='get'>
@@ -162,4 +166,4 @@ function Home(){
     )
 }
 
-export default Home;
+export default Hotels;
