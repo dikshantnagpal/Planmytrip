@@ -9,7 +9,6 @@ import { ImageCard } from './ImageCard';
 function Home(){
     
     const [yes,setYes] = useState(true);
-    console.log(yes);
     const date = new Date();
     let today = date.getDate() +"/"+ date.getFullYear();
     const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
