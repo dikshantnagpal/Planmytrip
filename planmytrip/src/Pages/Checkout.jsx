@@ -6,9 +6,10 @@ import HotelRule from "../Components/HotelRule";
 import { ChakraProvider } from "@chakra-ui/react";
 import CheckoutForm from "../Components/CheckoutForm";
 
-const hotelDetails = JSON.parse(localStorage.getItem("hotel"));
+const hotelDetails = JSON.parse(localStorage.getItem("hotel"))||[];
 
 let tax = 0.1 * Number(hotelDetails.price);
+console.log(tax)
 
 let total_ammount = Number(hotelDetails.price) + tax;
 
