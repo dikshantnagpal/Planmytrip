@@ -4,6 +4,7 @@ import "./Checkout.css";
 import { StarIcon } from "@chakra-ui/icons";
 import HotelRule from "../Components/HotelRule";
 import { ChakraProvider } from "@chakra-ui/react";
+import CheckoutForm from "../Components/CheckoutForm";
 
 const hotelDetails = JSON.parse(localStorage.getItem("hotel"));
 
@@ -44,7 +45,7 @@ const Checkout = () => {
               <img src={hotelDetails.image} alt="" width={"50%"} />
             </Box>
           </Flex>
-          <Box borderBottom={"1px solid brown"} padding="10px">
+          <Box borderBottom={"1px solid brown"} padding="10px" marginTop={20}>
             <h3 style={{ backgroundColor: "#FF7F50", color: "white" }}>
               Important Information
             </h3>
@@ -67,6 +68,7 @@ const Checkout = () => {
               </ChakraProvider>
             </Box>
           </Box>
+          <CheckoutForm />
         </Box>
         <Box>
           <h1 className="hotel_review">Price</h1>
