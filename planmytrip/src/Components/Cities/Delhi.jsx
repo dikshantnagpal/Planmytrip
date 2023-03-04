@@ -1,11 +1,9 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import "../../Pages/SinglePage.css";
 
 export const Delhi = () => {
-  const navigate = useNavigate();
   const [data, setData] = useState([]);
   const getData = (url) => {
     return axios.get(url);
@@ -13,22 +11,9 @@ export const Delhi = () => {
   useEffect(() => {
     getData("https://database-json-server.vercel.app/Delhi").then((res) => {
       setData(res.data);
-      // console.log(res.data);
+      console.log(res.data);
     });
   }, []);
-
-  const handleClick = ({ image, title, location, price, rating, id }) => {
-    let hotelDetails = {
-      image,
-      title,
-      location,
-      price,
-      rating,
-    };
-    localStorage.setItem("hotel", JSON.stringify(hotelDetails));
-    navigate(`${id}`);
-  };
-
   return (
     <div>
       {data.map((el) => {
@@ -97,6 +82,44 @@ export const Delhi = () => {
              
             </Flex> */}
           </div>
+
+              <DetailsBox>
+                <Flex>
+                  <p
+                    style={{
+                      backgroundColor: "green",
+                      padding: "5px",
+                      borderRadius: "5px",
+                      color: "white",
+                    }}
+                  >{`${el.rating}`}</p>
+                  <h3>{el.status}</h3>
+                </Flex>
+                <h3>{el.title}</h3>
+                <div>
+                  <i class="fa-sharp fa-solid fa-star-sharp"></i>
+                </div>
+                <div style={{ diplay: "block" }}>{el.location}</div>
+              </DetailsBox>
+              {/* <prizeBox> */}
+              {/* </prizeBox> */}
+            </Flex>
+            <div
+              style={{
+                diplay: "flex",
+                // alignItems: "center",
+                // justifyContent: "center",
+                backgroundColor: "rgb(245 245 245)",
+                padding: "30px",
+                borderLeft: "1px solid black",
+                float: "right",
+                // border: "3px solid green",
+              }}
+            >
+              <p style={{ marginTop: "80px" }}>{`Rs.${el.price}`}</p>
+            </div>
+          </UpperWrapper>
+
         );
       })}
     </div>

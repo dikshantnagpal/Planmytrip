@@ -4,10 +4,7 @@ import Navbar from "./Components/Navbar";
 
 
 import MainRoutes from "./Components/MainRoutes";
-import { ImageCard } from "./Components/Home/ImageCard";
-
-import Footer from "./Components/Footer";
-
+import Footer from "./Components/Footer"
 
 function App() {
   return (
@@ -15,7 +12,6 @@ function App() {
       <Navbar />
       <MainRoutes/>
       <Footer/>
-
     </div>
   );
 }
