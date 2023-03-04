@@ -1,6 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 #home {
@@ -26,7 +26,7 @@
   width: 100%;
   margin: auto;
 }
-#delhi{
+#delhi {
   display: flex;
   border: 0.1px solid grey;
   margin: auto;
@@ -108,249 +108,251 @@ label {
   cursor: pointer;
 }
 
-#whit{
-    margin: auto;
-    padding: 1%;
-    border-radius: 10px;
-    background-color: aliceblue;
+#whit {
+  margin: auto;
+  padding: 1%;
+  border-radius: 10px;
+  background-color: aliceblue;
 }
-.check{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: auto;
+.check {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
 }
-#delhi{
-    display: flex;
-    border: 0.1px solid grey;
-    margin: auto;
-    margin-top: 1%;
-    width: 100%;
-    height: 110px;
-    display: flex;
-    border-radius: 8px;
+#delhi {
+  display: flex;
+  border: 0.1px solid grey;
+  margin: auto;
+  margin-top: 1%;
+  width: 100%;
+  height: 110px;
+  display: flex;
+  border-radius: 8px;
 }
-.bang{
-    display: flex;
-    width: 50%;
+.bang {
+  display: flex;
+  width: 50%;
 }
-.bang>div{
-    border: 0.1px solid rgb(187, 187, 187);
-    width: 50%;
-    padding: 0% 0% 0% 1%;
-    text-align: left;
+.bang > div {
+  border: 0.1px solid rgb(187, 187, 187);
+  width: 50%;
+  padding: 0% 0% 0% 1%;
+  text-align: left;
 }
-.bang>div:first-child{
-    border-radius: 8px 0 0 8px;
+.bang > div:first-child {
+  border-radius: 8px 0 0 8px;
 }
-#label{
-    background-color: rgb(230, 227, 227);
-    text-align: left;
-    display: flex;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 1.8%;
-    width: 53%;
+#label {
+  background-color: rgb(230, 227, 227);
+  text-align: left;
+  display: flex;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1.8%;
+  width: 53%;
 }
-#label>div{
-    border: 1px solid white;
-    text-align: center;
-    font-size: 16px;
+#label > div {
+  border: 1px solid white;
+  text-align: center;
+  font-size: 16px;
 }
-label{
-    cursor: pointer;
+label {
+  cursor: pointer;
 }
-#search{
-    background-color: rgb(72, 72, 253);
-    color: white;
-    font-size: 22px;
-    padding: 1%;
-    border-radius: 20px;
-    border: none;
-    margin-top: 5%;
-    cursor: pointer;
-    width: 20%;
+#search {
+  background-color: rgb(72, 72, 253);
+  color: white;
+  font-size: 22px;
+  padding: 1%;
+  border-radius: 20px;
+  border: none;
+  margin-top: 5%;
+  cursor: pointer;
+  width: 20%;
 }
-#where{
-    display: flex;
-    margin: auto;
-    border-radius: 50px;
-    width: 75%;
-    height: auto;
-    margin-top: 30px;
-    background-color: rgb(231, 230, 230);
+#where {
+  display: flex;
+  margin: auto;
+  border-radius: 50px;
+  width: 75%;
+  height: auto;
+  margin-top: 30px;
+  background-color: rgb(231, 230, 230);
 }
-#where>div{
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    font-size: 16px;
-    border-left: 2px solid white;
+#where > div {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  border-left: 2px solid white;
 }
-#where>div:first-child,#where>div:last-child{
-    border-radius: 50px;
-    border: none;
+#where > div:first-child,
+#where > div:last-child {
+  border-radius: 50px;
+  border: none;
 }
-#where>div>img{
-    height: 30%;
-    width: 20%;
+#where > div > img {
+  height: 30%;
+  width: 20%;
 }
-#where>div:hover,.bang>div:hover{
-    background-color:  rgb(229, 229, 229);
-    cursor: pointer;
+#where > div:hover,
+.bang > div:hover {
+  background-color: rgb(229, 229, 229);
+  cursor: pointer;
 }
-#crousel{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto;
-    padding: 2%;
-    gap: 3%;
+#crousel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  padding: 2%;
+  gap: 3%;
 }
-#big{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 20px;
-    margin-top: 200px;
-    border: 1px solid rgb(249, 248, 248);
+#big {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  margin-top: 200px;
+  border: 1px solid rgb(249, 248, 248);
 }
-#live{
-    display: flex;
-    border-radius: 15px;
-    margin-top: 5%;
-    gap: 5%;
-    padding: 5%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+#live {
+  display: flex;
+  border-radius: 15px;
+  margin-top: 5%;
+  gap: 5%;
+  padding: 5%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-#image{
-    border-radius: 15px;
-    width: 40%;
+#image {
+  border-radius: 15px;
+  width: 40%;
 }
-#gene{
-    border-radius: 15px;
-    width: 60%;
-    text-align: left;
+#gene {
+  border-radius: 15px;
+  width: 60%;
+  text-align: left;
 }
-#gene>button{
-    border: none;
-    color: blue;
-    font-weight: bolder;
-    padding: 2%;
-    background-color: white;
-    font-size: 17px;
+#gene > button {
+  border: none;
+  color: blue;
+  font-weight: bolder;
+  padding: 2%;
+  background-color: white;
+  font-size: 17px;
 }
-#live>div>img{
-    height: 80%;
-    width: 90%;
-    margin-top: 10%;
+#live > div > img {
+  height: 80%;
+  width: 90%;
+  margin-top: 10%;
 }
-#offer{
-    margin: 2% auto 2% auto;
-    /* margin-top: 2%; */
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-
+#offer {
+  margin: 2% auto 2% auto;
+  /* margin-top: 2%; */
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
 }
-#offer>div:first-child{
-    width: 70%;
+#offer > div:first-child {
+  width: 70%;
 }
-#btn>button{
-    align-items:flex-end;
-    padding: 10px;
-    color: #0b69b5;
-    font-size: 14px;
-    font-weight: 900;
-    border-radius: 5px;
-    border: 0.1px solid gray;
-    margin-right: 5px;
+#btn > button {
+  align-items: flex-end;
+  padding: 10px;
+  color: #0b69b5;
+  font-size: 14px;
+  font-weight: 900;
+  border-radius: 5px;
+  border: 0.1px solid gray;
+  margin-right: 5px;
 }
-#par{
-    display: flex;
+#par {
+  display: flex;
 }
-#par>a{
-    margin: 1% 1% 0 1%;
-
+#par > a {
+  margin: 1% 1% 0 1%;
 }
-#add{
-    width: 80%;
-    height: 3%;
-    border: none;
-    margin: 3% auto 3% auto;
+#add {
+  width: 80%;
+  height: auto;
+  border: 1px solid pink;
+  border-radius: 15px 0 0 15px;
+  margin: 3% auto 3% auto;
 }
-#add>img{
-    width: 100%;
-    height: 100%;
+#add > img {
+  width: 100%;
+  height: 100%;
 }
-#down{
-    width: 90%;
-    height: 200px;
-    margin: auto;
-    padding: 2%;
-    display: flex;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+#down {
+  width: 90%;
+  height: 200px;
+  margin: auto;
+  padding: 2%;
+  display: flex;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-#get>h1{
-    font-size: 2.8rem;
-    margin-bottom: 1%;
+#get > h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1%;
 }
-#get{
-    border-right: 0.1px solid grey;
-    width: 70%;
-    text-align: left;
+#get {
+  border-right: 0.1px solid grey;
+  width: 70%;
+  text-align: left;
 }
-#get>input,#get>button{
-    padding: 13px;
-    font-size: 1.1rem;
-    margin-top: 10px;
-    border-radius: 10px;
-    border: 0.1px solid grey;
+#get > input,
+#get > button {
+  padding: 13px;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 0.1px solid grey;
 }
-#qr{
-    height: 55%;
-    width: 40%;
-    margin-top: 25px;
+#qr {
+  height: 55%;
+  width: 40%;
+  margin-top: 25px;
 }
-#store{
-    margin-top: 25px;
-    height: 62%;
-    width: 50%;
-    margin-right: 6%;
+#store {
+  margin-top: 25px;
+  height: 62%;
+  width: 50%;
+  margin-right: 6%;
 }
-.imgcard>div{
-    display: flex;
-    width: 95%;
-    gap: 2%;
-    margin: auto;
+.imgcard > div {
+  display: flex;
+  width: 95%;
+  gap: 2%;
+  margin: auto;
 }
-.imgcard{
-    padding: 2%;
-    border-radius: 15px;
-    text-align: left;
-    margin: 3% auto 3% auto;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.imgcard {
+  padding: 2%;
+  border-radius: 15px;
+  text-align: left;
+  margin: 3% auto 3% auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.imgcard>h1{
-    margin-bottom: 2%;
+.imgcard > h1 {
+  margin-bottom: 2%;
 }
-#trip{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: auto;
-    height: 70px;
-    border-radius: 10px;
-    border: 2px solid red;
-    margin-bottom: 30px;
+#trip {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  height: 70px;
+  border-radius: 10px;
+  border: 2px solid red;
+  margin-bottom: 30px;
 }
-#trip>div>img{
-    height: 100%;
-    width: 20%;
+#trip > div > img {
+  height: 100%;
+  width: 20%;
 }
-#trip>div>button{
-   padding: 6px;
-   border: none;
-   color: #0b69b5;
-   font-weight: 900;
-   width: 100%;
-    margin: 20% 20px 32% 0;
+#trip > div > button {
+  padding: 6px;
+  border: none;
+  color: #0b69b5;
+  font-weight: 900;
+  width: 100%;
+  margin: 20% 20px 32% 0;
 }
