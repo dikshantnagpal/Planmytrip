@@ -1,7 +1,11 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+
 import Navbar from "../Navbar";
+
+import "../../Pages/SinglePage.css";
+
 export const Delhi = () => {
   const [data, setData] = useState([]);
   const getData = (url) => {

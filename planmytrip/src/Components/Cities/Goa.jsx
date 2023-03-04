@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import Navbar from "../Navbar";
 import styled from "styled-components";
 
 export const Goa = () => {
@@ -15,6 +16,7 @@ export const Goa = () => {
   }, []);
   return (
     <div>
+      <Navbar />
       {data.map((el) => {
         return (
           <UpperWrapper>
