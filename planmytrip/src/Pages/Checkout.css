@@ -1,0 +1,89 @@
+.hotel_review {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.hotel_information {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 20px;
+}
+
+#checkout_page_rating {
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  border: 0px;
+  border-radius: 5px;
+}
+
+.price_text {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.hotel_price {
+  margin: 10px;
+}
+
+#total_price_text {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#total_price {
+  font-weight: 700;
+  color: red;
+}
+
+.rule_heading {
+  font-weight: 700;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* checkout Form */
+
+#form {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding: 20px;
+  background-color: #ffe4c4;
+  border-radius: 10px;
+}
+
+#guest_details {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.form_label {
+  text-align: left;
+  font-size: 13px;
+  padding-top: 10px;
+  font-weight: 400px;
+}
+
+.form_input {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#pay_now {
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 10px 80px;
+  background-image: linear-gradient(96deg, #53b2fe, #065af3);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}

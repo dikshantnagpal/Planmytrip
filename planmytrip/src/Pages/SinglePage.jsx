@@ -1,12 +1,13 @@
 import { Box, SimpleGrid, Text } from "@chakra-ui/react";
 import React from "react";
 import { Button } from "react-bootstrap";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "./SinglePage.css";
 
 const hotelDetails = JSON.parse(localStorage.getItem("hotel"));
 
 const SinglePage = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <SimpleGrid
@@ -36,7 +37,9 @@ const SinglePage = () => {
           <Text className="hotel_text">
             Rating : <span id="hotel_rating">{hotelDetails.rating}</span>
           </Text>
-          <Button id="hotel_button">Book Online</Button>
+          <Button id="hotel_button" onClick={() => navigate("/checkout")}>
+            Book Online
+          </Button>
         </Box>
       </SimpleGrid>
     </div>

@@ -7,8 +7,12 @@ import { UserAuthContextProvider } from "./Context/UserAuthContext";
 import Hotels from "./Hotels/Hotels";
 import { Delhi } from "./Cities/Delhi";
 import SinglePage from "../Pages/SinglePage";
+
+import Checkout from "../Pages/Checkout";
+
 import { Goa } from "./Cities/Goa";
 import { Mumbai } from "./Cities/Mumbai";
+
 const MainRoutes = () => {
   return (
     <div>
@@ -22,6 +26,7 @@ const MainRoutes = () => {
           <Route path="/login" element={<Login />}></Route>
           <Route path="/signup" element={<SignUp />}></Route>
           <Route path="/delhi/:id" element={<SinglePage />}></Route>
+          <Route path="/checkout" element={<Checkout />}></Route>
         </Routes>
       </UserAuthContextProvider>
     </div>
