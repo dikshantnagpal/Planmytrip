@@ -9,7 +9,7 @@ const Footer = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <Box style={{ backgroundColor: "#f3f1f1" }}>
+      <Box style={{ backgroundColor: "#f3f1f1",marginTop:"70px" }}>
         <Box id="footer_top">
           <Box>
             <Text className="footer_top_category">PRODUCT OFFERING</Text>
@@ -127,7 +127,7 @@ const Footer = () => {
       </Box>
       <Box backgroundColor={"#dddbdb"}>
         <Box id="footer_mid">
-          <Box w={"32%"}>
+          <Box w={"32%"} className="footer_mid_box">
             <Text className="footer_about_me">Why PlanMyTrip?</Text>
             <Text className="footer_description">
               Established in 2000, PlanMyTrip has since positioned itself as one
@@ -142,7 +142,7 @@ const Footer = () => {
               customers’ evolving needs and demands.
             </Text>
           </Box>
-          <Box w={"32%"}>
+          <Box w={"32%"} className="footer_mid_box">
             <Text className="footer_about_me">
               Booking Flights with MakeMyTrip
             </Text>
@@ -161,7 +161,7 @@ const Footer = () => {
               available options for your travel needs with us.
             </Text>
           </Box>
-          <Box w={"32%"}>
+          <Box w={"32%"} className="footer_mid_box">
             <Text className="footer_about_me">
               Domestic Flights with MakeMyTrip
             </Text>
@@ -176,7 +176,7 @@ const Footer = () => {
         </Box>
       </Box>
       <Box background={"black"}>
-        <Flex id="footer_bottom">
+        <Box id="footer_bottom">
           <Flex gap={"20px"}>
             <Link to={"https://twitter.com/makemytrip/"}>
               <Image src={twitter} backgroundColor="white" borderRadius="50%" />
@@ -194,7 +194,7 @@ const Footer = () => {
               @ 2023 PLANMYTRIP PVT.LTD <spam>country</spam> INDIA USA UAE
             </Text>
           </Box>
-        </Flex>
+        </Box>
       </Box>
     </div>
   );

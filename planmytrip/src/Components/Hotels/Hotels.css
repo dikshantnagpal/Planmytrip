@@ -272,8 +272,9 @@ label{
 }
 #add{
     width: 80%;
-    height: 3%;
-    border: none;
+    height: auto;
+    border: 1px solid pink;
+    border-radius: 15px 0 0 15px;
     margin: 3% auto 3% auto;
 }
 #add>img{
