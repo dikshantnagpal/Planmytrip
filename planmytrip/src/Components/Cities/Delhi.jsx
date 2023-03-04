@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-
+import Navbar from "../Navbar";
 export const Delhi = () => {
   const [data, setData] = useState([]);
   const getData = (url) => {
@@ -15,6 +15,7 @@ export const Delhi = () => {
   }, []);
   return (
     <div>
+      <Navbar />
       {data.map((el) => {
         return (
           <UpperWrapper>
