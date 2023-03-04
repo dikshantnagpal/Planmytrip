@@ -2,7 +2,7 @@ import { useState } from "react";
 import Card from "./Card";
 import { data, images, images2 } from "./data";
 import { data2 } from "./data";
-import "./Hotels.css";
+// import "./Home.css";
 import { Link } from "react-router-dom";
 import { ImageCard } from "./ImageCard";
 import { useNavigate } from "react-router-dom";
@@ -12,22 +12,6 @@ function Hotels() {
   const navigate = useNavigate();
   const [yes, setYes] = useState(true);
   const [search, setSearch] = useState("");
-  console.log("search: ", search);
-
-  //   const date = new Date();
-  //   let today = date.getDate() + "/" + date.getFullYear();
-  //   let nextDat = date.getDate() + 1 + "/" + date.getFullYear();
-  //   const weekday = [
-  //     "Sunday",
-  //     "Monday",
-  //     "Tuesday",
-  //     "Wednesday",
-  //     "Thursday",
-  //     "Friday",
-  //     "Saturday",
-  //   ];
-  //   let day = weekday[date.getDay()];
-  //   let nextDay = weekday[date.getDay() + 1];
   const handleClick = () => {
     if (search === "delhi") {
       navigate("/delhi");
@@ -35,6 +19,8 @@ function Hotels() {
       navigate("/goa");
     } else if (search === "mumbai") {
       navigate("/mumbai");
+    } else {
+      navigate("/delhi");
     }
   };
   return (
