@@ -14,6 +14,7 @@ import charted from "../Icon/charted.png";
 import activity from "../Icon/activities.png";
 import { useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
+import Search from "./Search";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -58,43 +59,63 @@ const Navbar = () => {
             </Box>
             <Box className="nav_box" onClick={() => navigate("/")}>
               <Avatar src={flight} className="nav_avatar" />
-              <Text className="nav_text" marginTop={10} >Flights</Text>
+              <Text className="nav_text" marginTop={10}>
+                Flights
+              </Text>
             </Box>
             <Box className="nav_box" onClick={() => navigate("/")}>
               <Avatar src={hotel} className="nav_avatar" />
-              <Text className="nav_text" marginTop={10} >Hotels</Text>
+              <Text className="nav_text" marginTop={10}>
+                Hotels
+              </Text>
             </Box>
             <Box className="nav_box" onClick={() => navigate("/house")}>
               <Avatar src={house} className="nav_avatar" />
-              <Text className="nav_text" marginTop={10} >Homestays</Text>
+              <Text className="nav_text" marginTop={10}>
+                Homestays
+              </Text>
             </Box>
             <Box className="nav_box" onClick={() => navigate("/holiday")}>
               <Avatar src={holiday} className="nav_avatar" />
-              <Text className="nav_text" marginTop={10} >HolidayPlan</Text>
+              <Text className="nav_text" marginTop={10}>
+                HolidayPlan
+              </Text>
             </Box>
             <Box className="nav_box" onClick={() => navigate("/train")}>
               <Avatar src={train} className="nav_avatar" />
-              <Text className="nav_text" marginTop={14} >Train</Text>
+              <Text className="nav_text" marginTop={14}>
+                Train
+              </Text>
             </Box>
             <Box className="nav_box" onClick={() => navigate("/bus")}>
               <Avatar src={bus} className="nav_avatar" />
-              <Text className="nav_text" marginTop={13} >Buses</Text>
+              <Text className="nav_text" marginTop={13}>
+                Buses
+              </Text>
             </Box>
             <Box className="nav_box" onClick={() => navigate("/cab")}>
               <Avatar src={cab} className="nav_avatar" />
-              <Text className="nav_text" marginTop={13} >Cabs</Text>
+              <Text className="nav_text" marginTop={13}>
+                Cabs
+              </Text>
             </Box>
             <Box className="nav_box" onClick={() => navigate("/forex")}>
               <Avatar src={forex} className="nav_avatar" />
-              <Text className="nav_text" marginTop={13} >Forex</Text>
+              <Text className="nav_text" marginTop={13}>
+                Forex
+              </Text>
             </Box>
             <Box className="nav_box" onClick={() => navigate("/charted")}>
               <Avatar src={charted} className="nav_avatar" />
-              <Text className="nav_text" marginTop={10} >CharterPlane</Text>
+              <Text className="nav_text" marginTop={10}>
+                CharterPlane
+              </Text>
             </Box>
             <Box className="nav_box" onClick={() => navigate("/activity")}>
               <Avatar src={activity} className="nav_avatar" />
-              <Text className="nav_text" marginTop={14} >Activities</Text>
+              <Text className="nav_text" marginTop={14}>
+                Activities
+              </Text>
             </Box>
           </Box>
           <Flex w={"30%"} id="nav_filter">
@@ -112,6 +133,7 @@ const Navbar = () => {
                 Login
               </Button>
             </Box>
+
             <Box>
               <label className="select_label">Country</label>
               <br />

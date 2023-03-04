@@ -1,6 +1,9 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+
+import Navbar from "../Navbar";
+
 import "../../Pages/SinglePage.css";
 
 export const Delhi = () => {
@@ -16,6 +19,7 @@ export const Delhi = () => {
   }, []);
   return (
     <div>
+      <Navbar />
       {data.map((el) => {
         return (
           <div>
