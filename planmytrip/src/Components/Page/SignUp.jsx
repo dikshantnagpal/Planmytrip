@@ -22,7 +22,7 @@ export const SignUp = () => {
   }
     return (
       <div >
-          <div style={{ rounded: "10px", justifyContent: "center", width: "30%", margin: "auto", alignItems: "center", marginTop: "150px", backgroundColor: "#e2e8f0", boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px", height: "380px" }}>
+        <div style={{ rounded: "10px", padding: "0px 20px", justifyContent: "center", width: "max-content", margin: "auto", alignItems: "center", marginTop: "150px", backgroundColor: "#e2e8f0", boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px", height: "380px" }}>
               <h2 style={{ fontWeight: "normal" }}>Sign Up</h2>
               {err && <Alert variant='danger'>{err}</Alert>}
               <div >

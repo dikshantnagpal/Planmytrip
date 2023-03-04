@@ -56,11 +56,11 @@ const Navbar = () => {
             <Box id="nav_home" onClick={() => navigate("/")}>
               <Text>Home</Text>
             </Box>
-            <Box className="nav_box" onClick={() => navigate("/flight")}>
+            <Box className="nav_box" onClick={() => navigate("/")}>
               <Avatar src={flight} className="nav_avatar" />
               <Text className="nav_text">Flights</Text>
             </Box>
-            <Box className="nav_box" onClick={() => navigate("/hotel")}>
+            <Box className="nav_box" onClick={() => navigate("/")}>
               <Avatar src={hotel} className="nav_avatar" />
               <Text className="nav_text">Hotels</Text>
             </Box>

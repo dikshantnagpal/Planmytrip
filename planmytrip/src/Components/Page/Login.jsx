@@ -42,7 +42,7 @@ const Login = () => {
 
     return (
         <div >
-            <div style={{rounded:"10px", justifyContent: "center", width: "30%", margin: "auto", alignItems: "center", marginTop: "150px", backgroundColor: "#e2e8f0", boxShadow:"rgba(0, 0, 0, 0.35) 0px 5px 15px",height:"max-content"}}>
+            <div style={{rounded:"10px",padding:"0px 10px", justifyContent: "center", width:"max-content", margin: "auto", alignItems: "center", marginTop: "150px", backgroundColor: "#e2e8f0", boxShadow:"rgba(0, 0, 0, 0.35) 0px 5px 15px",height:"max-content"}}>
                 <h2 style={{fontWeight:"normal"}}>Login</h2>
                <h5 style={{marginLeft:"70px",color:"red"}}> {err && <Alert variant='danger'>{err}</Alert>}</h5>
                 <div >
