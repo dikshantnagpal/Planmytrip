@@ -4,22 +4,22 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useUserAuth } from '../Context/UserAuthContext';
 import { Alert } from 'react-bootstrap';
 export const SignUp = () => {
-    const [email,setEmail]=useState("")
-    const [password,setPassword]=useState("")
-    const {signUp}=useUserAuth()
-    const [err,setErr]=useState("")
-    const navigate=useNavigate()
-  const handleSubmit=async (e)=>{
-    e.preventDefault()
-    setErr("")
-    try{
-        await signUp(email,password)
-        navigate("/login")
-    }catch(err){
-        setErr(err.message)
-    }
+  const [email, setEmail] = useState("");
+  const [err, setErr] = useState("");
+  const [password, setPassword] = useState("");
+  const { signUp } = useUserAuth();
+  let navigate = useNavigate();
 
-  }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setErr("");
+    try {
+      await signUp(email, password);
+      navigate("/");
+    } catch (err) {
+      setErr(err.message);
+    }
+  };
     return (
       <div >
         <div style={{ rounded: "10px", padding: "0px 20px", justifyContent: "center", width: "max-content", margin: "auto", alignItems: "center", marginTop: "150px", backgroundColor: "#e2e8f0", boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px", height: "380px" }}>

@@ -14,11 +14,17 @@ import charted from "../Icon/charted.png";
 import activity from "../Icon/activities.png";
 import { useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
-// import Search from "./Search";
+
+
+import Search from "./Search";
+import  {useUserAuth}  from "./Context/UserAuthContext"
 
 const Navbar = () => {
   const navigate = useNavigate();
   const [responsiveMenu, setResponsiveMenu] = useState(false);
+  // const {logOut} =useUserAuth()
+ 
+  const userData = JSON.parse(localStorage.getItem("userData")) || <p>login</p>
   return (
     <div>
       <div
@@ -130,7 +136,7 @@ const Navbar = () => {
                 onClick={() => navigate("/login")}
                 cursor="pointer"
               >
-                Login
+                {userData} 
               </Button>
             </Box>
 

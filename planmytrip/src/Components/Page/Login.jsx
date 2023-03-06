@@ -12,33 +12,39 @@ import {
     AlertTitle,
 } from "@chakra-ui/react";
 // import { useUserAuth } from "../Context/UserAuthContext";
+// import { getAuth, createUserWithEmailAndPassword } from "firebase/auth"
+// import { auth } from "../../firebase";
+
 
 const Login = () => {
-    const [email, setEmail] = useState("")
-    const [password, setPassword] = useState("")
-    const { logIn,googleSignIn } = useUserAuth()
-    const [err, setErr] = useState("")
-    const navigate = useNavigate()
-    const handleSubmit = async (e) => {
-        e.preventDefault()
-        setErr("")
-        try {
-            await logIn(email, password)
-            navigate("/")
-        } catch (err) {
-            setErr(err.message)
-        }
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [err, setErr] = useState("");
+    const { logIn, googleSignIn,user } = useUserAuth();
+    const navigate = useNavigate();
 
-    }
-    const handleGoogleSignIn=async(e)=>{
-        e.preventDefault()
-        try{
-            await googleSignIn()
-            navigate("/")
-        }catch(err){
-            setErr(err.message)
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setErr("");
+        try {
+            await logIn(email, password);
+            localStorage.setItem("userData",JSON.stringify(email))
+            navigate("/");
+        } catch (err) {
+            setErr(err.message);
         }
-    }
+    };
+
+    const handleGoogleSignIn = async (e) => {
+        e.preventDefault();
+        try {
+            await googleSignIn();
+            localStorage.setItem("userData", JSON.stringify(user.email))
+            navigate("/");
+        } catch (err) {
+            console.log(err.message);
+        }
+    };
 
     return (
         <div >
