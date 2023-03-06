@@ -53,16 +53,22 @@ export const Mumbai = () => {
             <div
               style={{
                 diplay: "flex",
-                // alignItems: "center",
-                // justifyContent: "center",
+                alignItems: "center",
+                justifyContent: "flex-end",
                 backgroundColor: "rgb(245 245 245)",
                 padding: "30px",
                 borderLeft: "1px solid black",
-                float: "right",
+                // float: "right",
                 // border: "3px solid green",
               }}
             >
-              <p style={{ marginTop: "80px" }}>{`Rs.${el.price}`}</p>
+              <p
+                style={{
+                  marginTop: "80px",
+                  fontSize: "25px",
+                  fontWeight: "bolder",
+                }}
+              >{`₹${el.price}`}</p>
             </div>
           </UpperWrapper>
         );
@@ -70,6 +76,8 @@ export const Mumbai = () => {
     </div>
   );
 };
+
+// CSS
 const Flex = styled.div`
   display: flex;
   width: 100%;
@@ -90,7 +98,10 @@ const DetailsBox = styled.div`
   gap: 5px;
 `;
 const UpperWrapper = styled.div`
-  border: 1px solid red;
+  border: 2px solid grey;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
   width: 60%;
   margin: auto;
   margin-top: 100px;
