@@ -14,6 +14,8 @@ import charted from "../Icon/charted.png";
 import activity from "../Icon/activities.png";
 import { useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
+
+
 import Search from "./Search";
 import  {useUserAuth}  from "./Context/UserAuthContext"
 
