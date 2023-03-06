@@ -1,7 +1,7 @@
 # Planmytrip
 This project is a clone of MakeMyTrip which is an Indian online travel company founded in 2000. Headquartered in Gurugram, Haryana, its a company. the company provides online travel services including airline tickets, domestic and international holiday packages, hotel reservations, rail, and bus tickets.
  
- <h3>Live Demo Link https://stately-macaron-ebd339.netlify.app/ </h3>
+ <h3>Live Demo Link https://celebrated-bunny-b6e3a9.netlify.app/ </h3>
  
   <h1>Home Page</h1>
     <img src="https://user-images.githubusercontent.com/108027350/222748905-02ecef55-4886-42be-9cd7-b1c702ac321b.png" alt="">
