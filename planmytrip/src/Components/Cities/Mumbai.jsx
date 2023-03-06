@@ -1,9 +1,11 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import Navbar from "../Navbar";
 export const Mumbai = () => {
   const [data, setData] = useState([]);
+  const navigate = useNavigate();
   const getData = (url) => {
     return axios.get(url);
   };
@@ -13,12 +15,38 @@ export const Mumbai = () => {
       console.log(res.data);
     });
   }, []);
+
+  const handleClick = ({
+    image,
+    rating,
+    status,
+    title,
+    location,
+    price,
+    id,
+  }) => {
+    const hotelDetail = {
+      image,
+      rating,
+      status,
+      title,
+      location,
+      price,
+      id,
+    };
+    localStorage.setItem("hotel", JSON.stringify(hotelDetail));
+    navigate(`/mumbai/${id}`);
+  };
+
   return (
     <div>
       <Navbar />
       {data.map((el) => {
         return (
-          <UpperWrapper>
+          <UpperWrapper
+            onClick={() => handleClick(el)}
+            style={{ cursor: "pointer" }}
+          >
             <Flex key={el.id}>
               <Image>
                 <img

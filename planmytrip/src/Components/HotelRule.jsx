@@ -135,11 +135,177 @@ function HotelRule() {
               </li>
               <li>Local ids are allowed</li>
             </ul>
+            <h3 className="rule_heading">Directions to reach the property</h3>
+            <ul>
+              <li>
+                The property is located at a distance of 3.0 KMs from the Indira
+                Gandhi International Airport. Take a taxi from Indira Gandhi
+                International Airport and de-board at KELVISH HOTEL. The
+                estimated travel fare from the Indira Gandhi International
+                Airport to the property is 500.0 INR and total travel time is 10
+                minutes.
+              </li>
+              <li>
+                The property is located at a distance of 12.0 KMs from the new
+                delhi rly station. Take a taxi from new delhi rly station and
+                de-board at KELVISH HOTEL. The estimated travel fare from the
+                new delhi rly station to the property is 700.0 INR and total
+                travel time is 30 minutes.
+              </li>
+              <li>
+                The property is located at a distance of 0.0 KMs from the
+                Maharana Pratap Kashmiri Gate ISBT. Take a bus from Maharana
+                Pratap Kashmiri Gate ISBT and de-board at Mahipalpur Main Chowk.
+                You can get a bus every 10 minutes. The estimated travel fare
+                from the Maharana Pratap Kashmiri Gate ISBT to the property is
+                150.0 INR and total travel time is 30 minutes.
+              </li>
+              <li>
+                The property is located at a distance of 2.0 KMs from the Vasant
+                Kunj Rd, opp. Vasant Valley School, IAA Colony, Sector C, Vasant
+                Kunj, New Delhi, Delhi 110070, India. Take a taxi from Vasant
+                Kunj Rd, opp. Vasant Valley School, IAA Colony, Sector C, Vasant
+                Kunj, New Delhi, Delhi 110070, India and de-board at Spinal
+                Hospital Vasant Kunj. The estimated travel fare from the Vasant
+                Kunj Rd, opp. Vasant Valley School, IAA Colony, Sector C, Vasant
+                Kunj, New Delhi, Delhi 110070, India to the property is 250.0
+                INR and total travel time is 5 minutes.
+              </li>
+              <li>
+                The property is located at a distance of 3.5 KMs from the 2,
+                Nelson Mandela Marg, Ambience Island, Vasant Kunj II, Vasant
+                Kunj, New Delhi, Delhi 110070, India. Take a taxi from 2, Nelson
+                Mandela Marg, Ambience Island, Vasant Kunj II, Vasant Kunj, New
+                Delhi, Delhi 110070, India and de-board at Ambience Mall Vasant
+                Kunj. The estimated travel fare from the 2, Nelson Mandela Marg,
+                Ambience Island, Vasant Kunj II, Vasant Kunj, New Delhi, Delhi
+                110070, India to the property is 300.0 INR and total travel time
+                is 10 minutes.
+              </li>
+              <li>
+                The property is located at a 400 meters walking distance from
+                the Aerocity, Indira Gandhi International Airport, New Delhi,
+                Delhi 110037, India with an easy trek. Total travel time is 5
+                minutes.
+              </li>
+              <li>
+                The property is located at a 400 meters walking distance from
+                the Aerocity, New Delhi, Delhi 110037, India with an easy trek.
+                Total travel time is 5 minutes.
+              </li>
+            </ul>
+            <h3 className="rule_heading">Other Rules</h3>
+            <ul>
+              <li>Allows private parties or events</li>
+              <li>Visitors are not allowed</li>
+              <li>
+                We do allow unmarried/unrelated couples to check-in. This is at
+                full discretion of the hotel management. No refund would be
+                applicable in case the check-in is denied under such
+                circumstances.
+              </li>
+            </ul>
+            <h3 className="rule_heading">child extra bed policy</h3>
+            <ul>
+              <li>
+                An extra bed will be provided to accommodate any child included
+                in the booking for a charge mentioned below.
+              </li>
+              <li>
+                INR 300 will be charged for an extra mattress per child. (To be
+                paid at the property)
+              </li>
+            </ul>
+            <h3 className="rule_heading">adult extra bed policy</h3>
+            <ul>
+              <li>
+                An extra bed will be provided to accommodate any additional
+                guest included in the booking for a charge mentioned below.
+              </li>
+              <li>
+                INR 500 will be charged for an extra mattress per guest. (To be
+                paid at the property)
+              </li>
+            </ul>
             <h3 className="rule_heading">Cancellation Policy</h3>
             <ul>
               <li>
                 Cancellation and prepayment policies vary according to room
                 type. Please check the Fare policy associatedr room.
+              </li>
+            </ul>
+            <h3 className="rule_heading">Property Policy</h3>
+            <ul>
+              <li>
+                According to government regulations, a valid Photo ID has to be
+                carried by every person above the age of 18 staying at Kelvish
+                Hotel Near Delhi Airport. The identification proofs accepted are
+                Drivers License, Voters Card, Passport, Ration Card. Without
+                valid ID the guest will not be allowed to check in.
+              </li>
+              <li>
+                The primary guest checking in to the hotel must be at least 18
+                years of age.
+              </li>
+              <li>
+                Early check-in or late check-out is subject to availability and
+                may be chargeable by Kelvish Hotel Near Delhi Airport. The
+                standard check-in time is 12 PM and the standard check-out time
+                is 11 AM. After booking you will be sent an email confirmation
+                with hotel phone number. You can contact the hotel directly for
+                early check-in or late check-out.
+              </li>
+              <li>
+                The room tariff includes all taxes. The amount paid for the room
+                does not include charges for optional services and facilities
+                (such as room service, mini bar, snacks or telephone calls).
+                These will be charged at the time of check-out from the Hotel.
+              </li>
+              <li>
+                MakeMyTrip will not be responsible for any check-in denied by
+                the Hotel due to the aforesaid reason.
+              </li>
+              <li>
+                Kelvish Hotel Near Delhi Airport reserves the right of
+                admission. Accommodation can be denied to guests posing as a
+                'couple' if suitable proof of identification is not presented at
+                check-in.MakeMyTrip will not be responsible for any check-in
+                denied by the Hotel due to the aforesaid reason.
+              </li>
+              <li>
+                Kelvish Hotel Near Delhi Airport reserves the right of admission
+                for local residents. Accommodation can be denied to guests
+                residing in the same city. MakeMyTrip will not be responsible
+                for any check-in denied by the Hotel due to the aforesaid
+                reason.
+              </li>
+              <li>
+                For any update, User shall pay applicable
+                cancellation/modification charges.
+              </li>
+              <li>
+                For any concerns or clarifications related to your booking, you
+                can contact the property on 9354440443 and 7065237237.
+              </li>
+              <li>
+                Modified bookings will be subject to availability and revised
+                booking policy of the Hotel.
+              </li>
+              <li>
+                The cancellation/modification charges are standard and any
+                waiver is on the hotel's discretion.
+              </li>
+              <li>
+                Number of modifications possible on a booking will be on the
+                discretion of MakemyTrip.
+              </li>
+              <li>
+                Selective offers of MakeMyTrip will not be valid on a
+                cancellation or modification of booking.
+              </li>
+              <li>
+                Any e-coupon discount on the original booking shall be forfeited
+                in the event of cancellation or modification.
               </li>
             </ul>
             <h3 className="rule_heading">Payment Mode</h3>

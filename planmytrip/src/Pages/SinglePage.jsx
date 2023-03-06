@@ -1,7 +1,7 @@
 import { Box, SimpleGrid, Text } from "@chakra-ui/react";
 import React from "react";
 import { Button } from "react-bootstrap";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./SinglePage.css";
 
 const hotelDetails = JSON.parse(localStorage.getItem("hotel"));

@@ -5,9 +5,11 @@ import styled from "styled-components";
 import Navbar from "../Navbar";
 
 import "../../Pages/SinglePage.css";
+import { useNavigate } from "react-router-dom";
 
 export const Delhi = () => {
   const [data, setData] = useState([]);
+  const navigate = useNavigate();
   const getData = (url) => {
     return axios.get(url);
   };
@@ -17,12 +19,38 @@ export const Delhi = () => {
       console.log(res.data);
     });
   }, []);
+
+  const handleClick = ({
+    image,
+    rating,
+    status,
+    title,
+    location,
+    price,
+    id,
+  }) => {
+    const hotelDetail = {
+      image,
+      rating,
+      status,
+      title,
+      location,
+      price,
+      id,
+    };
+    localStorage.setItem("hotel", JSON.stringify(hotelDetail));
+    navigate(`/delhi/${id}`);
+  };
+
   return (
     <div>
       <Navbar />
       {data.map((el) => {
         return (
-          <UpperWrapper>
+          <UpperWrapper
+            onClick={() => handleClick(el)}
+            style={{ cursor: "pointer" }}
+          >
             <Flex key={el.id}>
               <Image>
                 <img

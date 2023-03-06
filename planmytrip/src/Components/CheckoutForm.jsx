@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../Pages/Checkout.css";
+import Payment from "../Pages/Payment";
 
-const CheckoutForm = () => {
+const CheckoutForm = ({ total_ammount }) => {
+  const navigate = useNavigate();
   const [guest, setGuest] = useState({
     name: "",
     age: "",
@@ -17,6 +20,13 @@ const CheckoutForm = () => {
     value = e.target.value;
     setGuest({ ...guest, [name]: value });
   };
+
+  // const handleClick = () => {
+  //   if ((guest.name, guest.age, guest.mobile, guest.email, guest.id_card)) {
+  //   } else {
+  //     alert("Fill all the details");
+  //   }
+  // };
 
   return (
     <div>
@@ -72,7 +82,6 @@ const CheckoutForm = () => {
           onChange={handleChange}
         />
       </div>
-      <button id="pay_now">PAY NOW</button>
     </div>
   );
 };

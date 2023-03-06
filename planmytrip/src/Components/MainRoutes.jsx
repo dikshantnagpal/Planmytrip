@@ -7,11 +7,10 @@ import { UserAuthContextProvider } from "./Context/UserAuthContext";
 import Hotels from "./Hotels/Hotels";
 import { Delhi } from "./Cities/Delhi";
 import SinglePage from "../Pages/SinglePage";
-
 import Checkout from "../Pages/Checkout";
-
 import { Goa } from "./Cities/Goa";
 import { Mumbai } from "./Cities/Mumbai";
+import Payment from "../Pages/Payment";
 
 const MainRoutes = () => {
   return (
@@ -26,7 +25,10 @@ const MainRoutes = () => {
           <Route path="/login" element={<Login />}></Route>
           <Route path="/signup" element={<SignUp />}></Route>
           <Route path="/delhi/:id" element={<SinglePage />}></Route>
+          <Route path="/goa/:id" element={<SinglePage />}></Route>
+          <Route path="/mumbai/:id" element={<SinglePage />}></Route>
           <Route path="/checkout" element={<Checkout />}></Route>
+          <Route path="/payment" element={<Payment />}></Route>
         </Routes>
       </UserAuthContextProvider>
     </div>

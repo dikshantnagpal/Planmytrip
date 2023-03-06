@@ -1,19 +1,66 @@
 import { SimpleGrid, Box, Flex, Text } from "@chakra-ui/react";
-import React from "react";
+import React, { useState, useCallback } from "react";
 import "./Checkout.css";
 import { StarIcon } from "@chakra-ui/icons";
 import HotelRule from "../Components/HotelRule";
 import { ChakraProvider } from "@chakra-ui/react";
 import CheckoutForm from "../Components/CheckoutForm";
+import Payment from "./Payment";
+import useRazorpay from "react-razorpay";
+import swal from "sweetalert";
+import { useNavigate } from "react-router-dom";
+import logo from "../Icon/Plan_my_trip.png";
 
-const hotelDetails = JSON.parse(localStorage.getItem("hotel"))||[];
+const hotelDetails = JSON.parse(localStorage.getItem("hotel")) || [];
 
 let tax = 0.1 * Number(hotelDetails.price);
-console.log(tax)
 
 let total_ammount = Number(hotelDetails.price) + tax;
 
 const Checkout = () => {
+  // const Razorpay = useRazorpay();
+  // const [success, setSuccess] = useState(false);
+  // const navigate = useNavigate();
+
+  // const handlePayment = useCallback(async () => {
+  //   const order = {
+  //     currency: "INR",
+  //     receipt: "qwsaq1",
+  //   };
+
+  //   const options = {
+  //     key: "rzp_test_qho4K1vu3eyRqY",
+  //     amount: total_ammount * 100 || 1619 * 100,
+  //     currency: "INR",
+  //     name: "Plan Mt Trip",
+  //     description: "Test Transaction",
+  //     image: logo,
+  //     order_id: order.id,
+  //     handler: (res) => {
+  //       swal({
+  //         title: "Payment Successful",
+  //         text: "Your Room has been Booked!",
+  //         icon: "success",
+  //       });
+  //       navigate("/");
+  //     },
+  //     prefill: {
+  //       name: "John Doe",
+  //       email: "youremail@example.com",
+  //       contact: "9999999999",
+  //     },
+  //     notes: {
+  //       address: "Razorpay Corporate Office",
+  //     },
+  //     theme: {
+  //       color: "#0D0D0D",
+  //     },
+  //   };
+
+  //   const rzpay = new Razorpay(options);
+  //   rzpay.open();
+  // }, [Razorpay]);
+
   return (
     <>
       <SimpleGrid
@@ -69,7 +116,7 @@ const Checkout = () => {
               </ChakraProvider>
             </Box>
           </Box>
-          <CheckoutForm />
+          <CheckoutForm total_ammount={total_ammount} />
         </Box>
         <Box>
           <h1 className="hotel_review">Price</h1>
@@ -96,6 +143,9 @@ const Checkout = () => {
           </Box>
         </Box>
       </SimpleGrid>
+      <button id="pay_now">
+        <Payment total_ammount={total_ammount} />
+      </button>
     </>
   );
 };
