@@ -2,9 +2,11 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 export const Goa = () => {
   const [data, setData] = useState([]);
+  const navigate = useNavigate();
   const getData = (url) => {
     return axios.get(url);
   };
@@ -14,12 +16,38 @@ export const Goa = () => {
       console.log(res.data);
     });
   }, []);
+
+  const handleClick = ({
+    image,
+    rating,
+    status,
+    title,
+    location,
+    price,
+    id,
+  }) => {
+    const hotelDetail = {
+      image,
+      rating,
+      status,
+      title,
+      location,
+      price,
+      id,
+    };
+    localStorage.setItem("hotel", JSON.stringify(hotelDetail));
+    navigate(`/goa/${id}`);
+  };
+
   return (
     <div>
       <Navbar />
       {data.map((el) => {
         return (
-          <UpperWrapper>
+          <UpperWrapper
+            onClick={() => handleClick(el)}
+            style={{ cursor: "pointer" }}
+          >
             <Flex key={el.id}>
               <Image>
                 <img
