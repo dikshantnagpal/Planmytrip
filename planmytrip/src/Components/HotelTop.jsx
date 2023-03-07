@@ -7,6 +7,7 @@ import {
   InputGroup,
   InputLeftElement,
   Center,
+  Flex,
 } from "@chakra-ui/react";
 import React from "react";
 import { SearchIcon, ChevronRightIcon } from "@chakra-ui/icons";
@@ -33,7 +34,12 @@ const HotelTop = () => {
             </Text>
           </Box>
           <Box display={"flex"} justifyContent="center" alignItems={"center"}>
-            <Box>
+            <Flex gap={2}>
+              <img
+                src="https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/sprite/view-map-new.png"
+                alt=""
+                width={"25%"}
+              />
               <InputGroup>
                 <InputLeftElement
                   pointerEvents="none"
@@ -48,7 +54,7 @@ const HotelTop = () => {
                   zIndex="4"
                 />
               </InputGroup>
-            </Box>
+            </Flex>
           </Box>
         </SimpleGrid>
       </ChakraProvider>
