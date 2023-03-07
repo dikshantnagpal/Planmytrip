@@ -1,11 +1,11 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import styled from "styled-components";
 import Navbar from "../Navbar";
-
-import "../../Pages/SinglePage.css";
 import { useNavigate } from "react-router-dom";
-
+import HotelTop from "../HotelTop";
+import HotelSidebar from "../HotelSidebar";
+import HotelCard from "../HotelCard";
+import "../HotelPage.css";
 
 export const Delhi = () => {
   const [data, setData] = useState([]);
@@ -40,116 +40,28 @@ export const Delhi = () => {
     };
     localStorage.setItem("hotel", JSON.stringify(hotelDetail));
     navigate(`/delhi/${id}`);
+    window.location.reload();
   };
 
   return (
-    <div>
+    <div style={{ marginTop: "60px" }}>
       <Navbar />
-      {data.map((el) => {
-        return (
-          <UpperWrapper
-            onClick={() => handleClick(el)}
-            style={{ cursor: "pointer" }}
-          >
-            <Flex key={el.id}>
-              <Image>
-                <img
-                  style={{ borderRadius: "5px" }}
-                  src={el.image}
-                  alt=""
-                  width="90%"
-                />
-              </Image>
-
-              <DetailsBox>
-                <Flex>
-                  <p
-                    style={{
-                      backgroundColor: "green",
-                      padding: "5px",
-                      borderRadius: "5px",
-                      color: "white",
-                    }}
-                  >{`${el.rating}`}</p>
-                  <h3>{el.status}</h3>
-                </Flex>
-                <h3>{el.title}</h3>
-                <div>
-                  <i class="fa-sharp fa-solid fa-star-sharp"></i>
-                </div>
-                <div style={{ diplay: "block" }}>{el.location}</div>
-              </DetailsBox>
-              {/* <prizeBox> */}
-              {/* </prizeBox> */}
-            </Flex>
-            <div
-              style={{
-                diplay: "flex",
-                alignItems: "center",
-                justifyContent: "flex-end",
-                backgroundColor: "rgb(245 245 245)",
-                padding: "30px",
-                borderLeft: "1px thin grey",
-                // float: "right",
-                // border: "3px solid green",
-              }}
-            >
-              <p
-                style={{
-                  // marginLeft: "45px",
-                  marginTop: "80px",
-                  fontSize: "18px",
-                  color: "gray",
-                }}
+      <HotelTop />
+      <div id="hotel_mid">
+        <HotelSidebar />
+        <div id="hotel_data">
+          {data.length > 0 &&
+            data.map((item) => (
+              <div
+                key={item.id}
+                onClick={() => handleClick(item)}
+                style={{ cursor: "pointer" }}
               >
-                <s>{`₹${el.strike}`}</s>
-              </p>
-
-              <p
-                style={{
-                  // marginTop: "10px",
-                  fontSize: "25px",
-                  fontWeight: "bolder",
-                }}
-              >{`₹${el.price}`}</p>
-            </div>
-          </UpperWrapper>
-        );
-      })}
+                <HotelCard {...item} />
+              </div>
+            ))}
+        </div>
+      </div>
     </div>
   );
 };
-
-// CSS
-const Flex = styled.div`
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 10px;
-  gap: 10px;
-`;
-const Image = styled.div`
-  padding-right: 2rem;
-  display: flex;
-  justify-content: flex-start;
-`;
-const DetailsBox = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 5px;
-`;
-const UpperWrapper = styled.div`
-  border: 1px solid grey;
-  border-radius: 5px;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-  width: 60%;
-  margin: auto;
-  margin-top: 100px;
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-`;

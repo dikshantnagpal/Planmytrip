@@ -1,0 +1,175 @@
+.hotelsAndMore {
+  color: #4a4a4a;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: lato;
+  font-weight: 600;
+}
+
+#HotelsVillasApartments {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+#hotel_sidebar {
+  width: auto;
+  padding: 0px 20px;
+  border: 1px solid gray;
+}
+
+#hotel_data {
+  width: auto;
+}
+
+#hotel_card {
+  border: 1px solid gray;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* Hotel Main page */
+
+@media (max-width: 1440px) {
+  #hotel_mid {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  #hotel_card {
+    display: grid;
+    grid-template-columns: 18% 58% 18%;
+    gap: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #hotel_mid {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  #hotel_card {
+    display: grid;
+    grid-template-columns: 18% 58% 18%;
+    gap: auto;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  #hotel_mid {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    gap: 5px;
+    margin-top: 50px;
+  }
+
+  #hotel_card {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+  #hotel_mid {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    gap: 5px;
+    margin-top: 50px;
+  }
+
+  #hotel_card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
+
+#hotel_card_data {
+  padding: 0px 20px;
+  text-align: left;
+}
+
+#hotel_card_rating {
+  padding: 3px 5px;
+  background-color: #0b58b4;
+  color: white;
+  font-weight: 550;
+  border-radius: 5px;
+}
+
+#hotel_card_status {
+  color: #0b58b4;
+  font-size: 14px;
+  font-weight: 700;
+  padding-left: 5px;
+}
+
+#hotel_card_title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+#hotel_card_location {
+  color: #0084ff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#hotel_card_location_description {
+  color: #9b9b9b;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#hotel_card_couple_friendly {
+  padding: 0px 10px;
+  background-color: #ebe9e9;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #4a4a4a;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+#hotel_card_money_back {
+  color: #8b572a;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#hotel_card_price {
+  background-color: #eeeeee;
+  text-align: left;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#hotel_card_strike {
+  color: #9b9b9b;
+  text-decoration: line-through;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#hotel_card_discounted_price {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+#hotel_card_per_night {
+  color: #9b9b9b;
+  font-size: 12px;
+  font-weight: 500;
+}
