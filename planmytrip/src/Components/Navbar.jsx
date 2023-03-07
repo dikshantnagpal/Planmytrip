@@ -15,16 +15,15 @@ import activity from "../Icon/activities.png";
 import { useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-
 import Search from "./Search";
-import  {useUserAuth}  from "./Context/UserAuthContext"
+import { useUserAuth } from "./Context/UserAuthContext";
 
 const Navbar = () => {
   const navigate = useNavigate();
   const [responsiveMenu, setResponsiveMenu] = useState(false);
   // const {logOut} =useUserAuth()
- 
-  const userData = JSON.parse(localStorage.getItem("userData")) || <p>login</p>
+
+  const userData = JSON.parse(localStorage.getItem("userData")) || <p>login</p>;
   return (
     <div>
       <div
@@ -32,9 +31,12 @@ const Navbar = () => {
           height: "60px",
           backgroundColor: "white",
           boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+          paddingBottom: "10px",
+          paddingTop: "10px",
           position: "fixed",
           top: "0px",
           left: "0px",
+          zIndex: 20,
         }}
         id="nav_div"
       >
@@ -136,7 +138,7 @@ const Navbar = () => {
                 onClick={() => navigate("/login")}
                 cursor="pointer"
               >
-                {userData} 
+                {userData}
               </Button>
             </Box>
 
