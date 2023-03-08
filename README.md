@@ -12,7 +12,17 @@ This project is a clone of MakeMyTrip which is an Indian online travel company f
     <img src="https://user-images.githubusercontent.com/108027350/222749148-d5741585-73f6-4b7e-a6ef-56db9715c6ad.png" alt="">
     
    <h1>Hotels page</h1>
-   <img src="https://user-images.githubusercontent.com/108027350/222749251-741d9479-ed9e-4058-a0c8-307262256d4a.png" alt="">
+   <img src="https://user-images.githubusercontent.com/106018569/223726786-e15045ad-4978-4223-9646-1b93ba9fda54.png" alt="">
+   
+   <h1>Single Hotel</h1>
+    <img src="https://user-images.githubusercontent.com/106018569/223727167-0c657cf2-b58f-4686-bb67-24f547d95d41.png" alt="">
+    
+   <h1>Checkout</h1>
+    <img src="https://user-images.githubusercontent.com/106018569/223727438-87bf9b0e-4fa2-4e35-9baa-4413c15227df.png" alt="">    
+    
+   <h1>Payment</h1>
+    <img src="https://user-images.githubusercontent.com/106018569/223727653-c7945128-a7e7-4038-9b95-0271bb8fff20.png" alt="">
+    
  
  
  
