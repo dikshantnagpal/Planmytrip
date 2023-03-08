@@ -23,7 +23,8 @@ This project is a clone of MakeMyTrip which is an Indian online travel company f
    <h1>Payment</h1>
     <img src="https://user-images.githubusercontent.com/106018569/223727653-c7945128-a7e7-4038-9b95-0271bb8fff20.png" alt="">
     
- 
+   <h1>Footer</h1>
+    <img src="https://user-images.githubusercontent.com/106018569/223728839-e0e58ebd-5ef2-4d85-b645-928c66047e5f.png" alt="">
  
  
  <h1>[Getting Started]</h1>
