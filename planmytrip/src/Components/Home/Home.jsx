@@ -23,10 +23,6 @@ function Home() {
       navigate("/delhi");
     }
   };
-
-
-
-
   
   return (
     <div id="home">
