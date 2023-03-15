@@ -12,7 +12,7 @@ export const Mumbai = () => {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
   const [sort,setSort]=useState("")
-  const [p_r,setP_r]=useState("")
+  // const [p_r,setP_r]=useState("")
   const navigate = useNavigate();
   const getData = (url) => {
     return axios.get(url);
@@ -22,11 +22,7 @@ export const Mumbai = () => {
   const onChange=(e)=>{
     
     setSort(e.target.value)
-    if (sort == "asc" || sort == "desc") {
-      setP_r("price")
-    } else {
-      setP_r("rating")
-    }
+    
     console.log(sort)
   }
   // <HotelSidebar setSort={setSort} sort={sort}/>
@@ -38,7 +34,7 @@ export const Mumbai = () => {
 
   useEffect(() => {
     getData(
-      `https://database-json-server.vercel.app/mumbai?_page=${page}&_limit=${limit}&_sort=${p_r}&_order=${sort}`
+      `https://database-json-server.vercel.app/mumbai?_page=${page}&_limit=${limit}&_sort=price&_order=${sort}`
     ).then((res) => {
       setData(res.data);
       console.log(res.data);

@@ -5,7 +5,7 @@ import { data2 } from "./data";
 import "./Home.css";
 import { Link, useNavigate } from "react-router-dom";
 import { ImageCard } from "./ImageCard";
-import { type } from "@testing-library/user-event/dist/type";
+// import { type } from "@testing-library/user-event/dist/type";
 
 function Home() {
   const navigate = useNavigate();

@@ -10,6 +10,8 @@ import "../HotelPage.css";
 export const Goa = () => {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
+  const [sort, setSort] = useState("")
+  // const [p_r, setP_r] = useState("")
   const navigate = useNavigate();
   const getData = (url) => {
     return axios.get(url);
@@ -17,15 +19,22 @@ export const Goa = () => {
   const handlePaggination = (no) => {
     setPage((prev) => prev + no);
   };
+
+  const onChange = (e) => {
+    setSort(e.target.value)
+    console.log(sort)
+  }
+
+
   let limit = 5;
   useEffect(() => {
     getData(
-      `https://database-json-server.vercel.app/Goa?_page=${page}&_limit=${limit}`
+      `https://database-json-server.vercel.app/goa?_page=${page}&_limit=${limit}&_sort=price&_order=${sort}`
     ).then((res) => {
       setData(res.data);
       console.log(res.data);
     });
-  }, [page]);
+  }, [page,sort]);
 
   const handleClick = ({
     image,
@@ -55,7 +64,7 @@ export const Goa = () => {
       <Navbar />
       <HotelTop />
       <div id="hotel_mid">
-        <HotelSidebar />
+        <HotelSidebar onChange={onChange} />
         <div id="hotel_data">
           {data.length > 0 &&
             data.map((item) => (
