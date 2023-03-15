@@ -587,3 +587,10 @@ label {
 .homeTop>.homeExplore>.exploreCard>img {
   width: 30px;
 }
+
+.MainSearchinputBx>input{
+  border: none;
+}
+.homeSearchButtonBx>button{
+  border: none;
+}
