@@ -6,10 +6,10 @@ import HotelRule from "../Components/HotelRule";
 import { ChakraProvider } from "@chakra-ui/react";
 import CheckoutForm from "../Components/CheckoutForm";
 import Payment from "./Payment";
-import useRazorpay from "react-razorpay";
-import swal from "sweetalert";
-import { useNavigate } from "react-router-dom";
-import logo from "../Icon/Plan_my_trip.png";
+// import useRazorpay from "react-razorpay";
+// import swal from "sweetalert";
+// import { useNavigate } from "react-router-dom";
+// import logo from "../Icon/Plan_my_trip.png";
 
 const hotelDetails = JSON.parse(localStorage.getItem("hotel")) || [];
 

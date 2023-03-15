@@ -7,7 +7,7 @@ import logo from "../Icon/Plan_my_trip.png";
 
 const Payment = ({ total_ammount }) => {
   const Razorpay = useRazorpay();
-  const [success, setSuccess] = useState(false);
+  const [success] = useState(false);
   const navigate = useNavigate();
 
   const handlePayment = useCallback(async () => {
