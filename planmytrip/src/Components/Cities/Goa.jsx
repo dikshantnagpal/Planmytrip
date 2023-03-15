@@ -25,7 +25,7 @@ export const Goa = () => {
       setData(res.data);
       console.log(res.data);
     });
-  }, []);
+  }, [page]);
 
   const handleClick = ({
     image,

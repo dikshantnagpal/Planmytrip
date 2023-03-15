@@ -3,18 +3,33 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../Navbar";
 import HotelTop from "../HotelTop";
-import HotelSidebar from "../HotelSidebar";
+// import HotelSidebar from "../HotelSidebar";
 import HotelCard from "../HotelCard";
 import "../HotelPage.css";
+import {HotelSidebar} from "../../Components/HotelSidebar"
 
 export const Mumbai = () => {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
+  const [sort,setSort]=useState("")
+  const [p_r,setP_r]=useState("")
   const navigate = useNavigate();
   const getData = (url) => {
     return axios.get(url);
   };
 
+
+  const onChange=(e)=>{
+    
+    setSort(e.target.value)
+    if (sort == "asc" || sort == "desc") {
+      setP_r("price")
+    } else {
+      setP_r("rating")
+    }
+    console.log(sort)
+  }
+  // <HotelSidebar setSort={setSort} sort={sort}/>
   const handlePaggination = (no) => {
     setPage((prev) => prev + no);
   };
@@ -23,12 +38,13 @@ export const Mumbai = () => {
 
   useEffect(() => {
     getData(
-      `https://database-json-server.vercel.app/Mumbai?_page=${page}&_limit=${limit}`
+      `https://database-json-server.vercel.app/mumbai?_page=${page}&_limit=${limit}&_sort=${p_r}&_order=${sort}`
     ).then((res) => {
       setData(res.data);
       console.log(res.data);
+      console.log(sort)
     });
-  }, []);
+  }, [page,sort]);
 
   const handleClick = ({
     image,
@@ -58,7 +74,7 @@ export const Mumbai = () => {
       <Navbar />
       <HotelTop />
       <div id="hotel_mid">
-        <HotelSidebar />
+        <HotelSidebar onChange={onChange} />
         <div id="hotel_data">
           {data.length > 0 &&
             data.map((item) => (
