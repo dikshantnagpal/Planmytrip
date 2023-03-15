@@ -4,7 +4,7 @@ This project is a clone of MakeMyTrip which is an Indian online travel company f
  <h3>Live Demo Link https://celebrated-bunny-b6e3a9.netlify.app/ </h3>
  
   <h1>Home Page</h1>
-    <img src="https://user-images.githubusercontent.com/108027350/222748905-02ecef55-4886-42be-9cd7-b1c702ac321b.png" alt="">
+    <img src=https://user-images.githubusercontent.com/108027350/225333828-1a8ac58c-7c51-456b-8742-147fa9e76d5c.png alt="">
     <img src="https://user-images.githubusercontent.com/108027350/222748993-a35a4a43-d94e-49c6-b154-5d2620b8be3b.png" alt="">
     <img src="https://user-images.githubusercontent.com/108027350/222749071-8ea7f3a0-a314-4299-a074-600752e36efc.png" alt="">
   
