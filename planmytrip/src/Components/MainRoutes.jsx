@@ -4,7 +4,7 @@ import Home from "./Home/Home";
 import Login from "./Page/Login";
 import { SignUp } from "./Page/SignUp";
 import { UserAuthContextProvider } from "./Context/UserAuthContext";
-import Hotels from "./Hotels/Hotels";
+// import Hotels from "./Hotels/Hotels";
 import { Delhi } from "./Cities/Delhi";
 import SinglePage from "../Pages/SinglePage";
 import Checkout from "../Pages/Checkout";
@@ -18,7 +18,7 @@ const MainRoutes = () => {
       <UserAuthContextProvider>
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/hotels" element={<Hotels />} />
+          <Route path="/hotels" element={<Home />} />
           <Route path="/delhi" element={<Delhi />} />
           <Route path="/goa" element={<Goa />} />
           <Route path="/mumbai" element={<Mumbai />} />
