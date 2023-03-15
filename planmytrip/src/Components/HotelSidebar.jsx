@@ -1,11 +1,18 @@
 import { Select } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect,useState } from "react";
+import axios from "axios"
 import "./HotelPage.css";
+import { Mumbai } from "./Cities/Mumbai";
 
-const HotelSidebar = () => {
-  const handleSort = (e) => {
-    console.log(e.target.value);
-  };
+export const HotelSidebar = ({onChange}) => {
+ 
+
+// console.log(sort)
+
+
+
+
+
 
   return (
     <div id="hotel_sidebar">
@@ -14,11 +21,10 @@ const HotelSidebar = () => {
         <div style={{ textAlign: "left", margin: "10px 0px" }}>
           <label className="sidebar_label">Sort By : </label>
         </div>
-        <select id="sidebar_sort" onChange={handleSort}>
-          <option value="populerty">Populerty</option>
-          <option value="lowToHigh">Price - Low to High</option>
-          <option value="highToLow">Price - High to Low</option>
-          <option value="userRating">User-rating - High to Low</option>
+        <select id="sidebar_sort" onChange={onChange}>
+          <option>Price</option>
+          <option value="asc">Price - Low to High</option>
+          <option value="desc">Price - High to Low</option>
         </select>
       </div>
       <div style={{ textAlign: "left" }}>

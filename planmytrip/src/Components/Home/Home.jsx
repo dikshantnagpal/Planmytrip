@@ -23,145 +23,138 @@ function Home() {
       navigate("/delhi");
     }
   };
+
+
+
+
+  
   return (
     <div id="home">
-      <div id="blue">
-        <div id="whit">
-          <div className="check">
-            <div>
-              <label style={{ marginRight: "11px" }}>
-                <input type="checkbox" />
-                Upto 5 Rooms
-              </label>
-              <label style={{ marginRight: "11px" }}>
-                <input type="checkbox" />
-                Group Deals
-              </label>
-            </div>
-            <div>Book International and domestic Property Online.</div>
+      <div className="homeTop">
+        <div className="homeTopCard">
+          <div className="secondHeader">
+            <Link to="" className="iconCard active">
+              <i className="fa fa-plane"></i>
+              <h1>Flight</h1>
+            </Link>
+            <Link to="" className="iconCard">
+              <i className="fa fa-hotel"></i>
+              <h1>Hotel</h1>
+            </Link>
+            <Link to="" className="iconCard">
+              <i className="fa fa-home"></i>
+              <h1>Home Style</h1>
+            </Link>
+            <Link to="" className="iconCard">
+              <i className="fa fa-train"></i>
+              <h1>Train</h1>
+            </Link>
+            <Link to="" className="iconCard">
+              <i className="fa fa-bus"></i>
+              <h1>Bus</h1>
+            </Link>
+            <Link to="" className="iconCard">
+              <i className="fa fa-car"></i>
+              <h1>Car</h1>
+            </Link>
+            <Link to="" className="iconCard">
+              <i className="fa fa-money"></i>
+              <h1>Forex</h1>
+            </Link>
+            <Link to="" className="iconCard">
+              <i className="fa fa-plane"></i>
+              <h1>Charter Plane</h1>
+            </Link>
           </div>
 
-          <div id="delhi">
-            <div className="bang">
-              <div>
-                CITY,PROPERTY NAME,LOCATION <br />
-                <h1>Search City</h1>{" "}
-                <input
-                  type="text"
-                  name=""
-                  id=""
-                  onChange={(e) => {
-                    setSearch(e.target.value);
-                  }}
-                />{" "}
-                India
+          {/* Sub Navbar for Hotels Start */}
+
+          <div className="homeInputBx">
+            <div>
+              <div className="homeInputs">
+                <input checked="checked" name="type" type="radio" id="inputs" />
+                <label for="inputs">UPTO 5 ROOMS</label>
               </div>
-              <div>
-                Check-In :<br /> <input type="date" />
-                {/* {today} {day} */}
+              <div className="homeInputs">
+                <input name="type" type="radio" id="inputs2" />
+                <label for="inputs2">GROUP DEAL</label>
               </div>
             </div>
-            <div className="bang">
-              <div>
-                Check-Out :<br /> <input type="date" />
-              </div>
-              <div style={{ padding: "0 20px 0 20px" }}>
-                ROOMS & GUESTS : <br />{" "}
-                <input
-                  type="number"
-                  disabled={type < 0}
-                  placeholder="ROOMS"
-                  style={{ wordSpacing: "-1px" }}
-                />
-                <input
-                  type="number"
-                  disabled={type < 0}
-                  placeholder="GUESTS"
-                  style={{ wordSpacing: "-1px" }}
-                />
-              </div>
-              <div>
-                PRICE PER NIGHT: <br />
-                <span style={{ color: "gray", fontWeight: "bolder" }}>
-                  {" "}
-                  Rs.0-1500,Rs1500-2500...
-                </span>
-              </div>
+            <p>Book International and Domestic Flights</p>
+          </div>
+          {/*  */}
+          <div className="homeMainSearchInput">
+            <div className="MainSearchinputBx">
+              <span>CITY, PROPERTY NAME OR LOCATION</span>
+              <input
+                id="from"
+                type="text"
+                style={{width:"fit-content"}}
+                placeholder="Search Hotel"
+                onChange={(e)=>setSearch(e.target.value)}
+              />
+            </div>
+            <div className="MainSearchinputBx">
+              <span>CHECK-IN</span>
+              <input type="date" style={{ width: "fit-content",fontWeight:"lighter" }} />
+            </div>
+            <div className="MainSearchinputBx">
+              <span>CHECK-OUT</span>
+              <input type="date" style={{ width: "fit-content" }} />
+            </div>
+            <div className="MainSearchinputBx">
+              <span>ROOMS & GUESTS</span>
+              <input
+                type="number"
+                placeholder="Person"
+                style={{
+                  width:"120px",
+                  fontSize:"20px"
+                }}
+                // value={person}
+                // onChange={handlePerson}
+              />
             </div>
           </div>
-          <div id="label">
-            <div>
-              <label>
-                <input type="checkbox" />
-                Regular Fares
-              </label>
-            </div>
-            <div>
-              <label>
-                <input type="checkbox" />
-                Armed Forces Fare
-              </label>
-            </div>
-            <div>
-              <label>
-                <input type="checkbox" />
-                Student Fares
-              </label>
-            </div>
-            <div>
-              <label>
-                <input type="checkbox" />
-                Senior Citizen Fares
-              </label>
-            </div>
-            <div>
-              <label>
-                <input type="checkbox" />
-                Double Fares
-              </label>
-            </div>
+          {/* Sub Navbar for Hotels Ends  */}
+          <div className="homeSearchButtonBx">
+            <button onClick={handleClick}>Search</button>
           </div>
         </div>
-        <button onClick={handleClick} id="search">
-          SEARCH
-        </button>
-
-        <h4>-- Explore More --</h4>
-
-        <div id="where">
-          <div>
+        <div className="homeExplore">
+          <div className="exploreCard">
             <img
               src="https://promos.makemytrip.com/appfest/2x/icon-wheretogo-23062022.png"
-              alt="icon"
-            />{" "}
-            <p>Where2go</p>
+              alt=""
+            />
+            <p>Where2Go</p>
           </div>
-          <div>
+          <div className="exploreCard">
             <img
               src="https://promos.makemytrip.com/appfest/2x/trip-money-1.png"
-              alt="icon"
-            />{" "}
+              alt=""
+            />
             <p>TripMoney</p>
           </div>
-          <div>
+          <div className="exploreCard">
             <img
               src="https://promos.makemytrip.com/Growth/Images/B2C/2x/dt_tert_flights.png"
-              alt="icon"
-            />{" "}
-            <p>Explore International Flights</p>
+              alt=""
+            />
+            <p>Explore Enternational Flights</p>
           </div>
-          <div>
+          <div className="exploreCard">
             <img
               src="https://promos.makemytrip.com/images/myBiz/MICE/mice%20icon%20-%20square.png"
-              alt="icon"
-            />{" "}
+              alt=""
+            />
             <p>MICE</p>
           </div>
-          <div>
+          <div className="exploreCard">
             <img
               src="https://promos.makemytrip.com/appfest/2x/gift%20card%201.png"
-              alt="icon"
-            />{" "}
+              alt=""
+            />
             <p>Gift Cards</p>
           </div>
         </div>
@@ -304,3 +297,85 @@ function Home() {
 }
 
 export default Home;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

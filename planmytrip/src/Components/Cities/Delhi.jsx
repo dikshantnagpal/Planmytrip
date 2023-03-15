@@ -7,6 +7,8 @@ import HotelSidebar from "../HotelSidebar";
 import HotelCard from "../HotelCard";
 import "../HotelPage.css";
 
+
+
 export const Delhi = () => {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
@@ -18,6 +20,9 @@ export const Delhi = () => {
   const handlePaggination = (no) => {
     setPage((prev) => prev + no);
   };
+  
+
+
 
   let limit = 5;
   useEffect(() => {
@@ -27,7 +32,7 @@ export const Delhi = () => {
       setData(res.data);
       console.log(res.data);
     });
-  }, []);
+  }, [page]);
 
   const handleClick = ({
     image,
